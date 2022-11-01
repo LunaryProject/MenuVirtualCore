@@ -2,4 +2,21 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+     ViewBag.Title = "QR";
+}
+
+@using (Html.BeginForm("QR", "QrCode", FormMethod.Post))
+{
+    <div>
+        <form>
+            <input type="hidden" name="qrcode" value="@Request.Url.Authority/Restaurante/Menu" />
+        </form>
+        <br />
+        <br />
+        
+        @if (ViewBag.QrCodeImage != null)
+        {
+            <img class="run" src="@ViewBag.QrCodeImage" alt="" style="height:300px;width:300px;margin-left:30px;margin-top:-27px;" />
+        }
+    </div>
 }

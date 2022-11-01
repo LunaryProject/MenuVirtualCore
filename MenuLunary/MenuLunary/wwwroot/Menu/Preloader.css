@@ -1,2 +1,160 @@
 ﻿body {
 }
+
+/* ini: Preloader */
+
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* cor do background que vai ocupar o body */
+    background: linear-gradient(45deg, black, rgba(165, 42, 42, 0.981));
+    animation: colors 15s ease infinite;
+    background-size: auto;
+    z-index: 999; /* z-index para jogar para frente e sobrepor tudo */
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#preloader .inner {
+    position: absolute;
+    top: 85%; /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bolas > div {
+    display: inline-block;
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin: 3px;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: animarBola;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+    .bolas > div:nth-child(1) {
+        animation-duration: 0.75s;
+        animation-delay: 0;
+    }
+
+    .bolas > div:nth-child(2) {
+        animation-duration: 0.75s;
+        animation-delay: 0.12s;
+    }
+
+    .bolas > div:nth-child(3) {
+        animation-duration: 0.75s;
+        animation-delay: 0.24s;
+    }
+
+@keyframes animarBola {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    16% {
+        -webkit-transform: scale(0.1);
+        transform: scale(0.1);
+        opacity: 0.7;
+    }
+
+    33% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.NomeRest {
+    position: absolute;
+    top: 20%; /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: yellow;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.icon {
+    position: absolute;
+    top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+}
+/* end: Preloader */
+
+
+
+/* responsivo*/
+@media screen and (min-width: 280px) {
+    .h1 {
+        font-size: 30px;
+    }
+
+    .icon {
+        width: 85px;
+        height: 85px;
+    }
+
+    #preloader {
+        background-size: 400px 900px;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .h1 {
+        font-size: 35px;
+    }
+
+    .icon {
+        width: 90px;
+        height: 90px;
+    }
+
+    #preloader {
+        background-size: 500px 900px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .h1 {
+        font-size: 40px;
+    }
+
+    .icon {
+        width: 95px;
+        height: 95px;
+    }
+
+    #preloader {
+        background-size: 600px 900px;
+    }
+}
+
