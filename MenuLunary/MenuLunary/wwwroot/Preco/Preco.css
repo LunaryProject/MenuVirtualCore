@@ -1,2 +1,22 @@
 ﻿body {
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.subir {
+    background-color: brown;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 900;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    top: 60px; /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
