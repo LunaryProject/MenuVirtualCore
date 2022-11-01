@@ -1,5 +1,90 @@
-﻿@*
+﻿@model Projeto_Lunary.Models.Restaurante
+
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+     ViewBag.Title = "Excluir";
 }
+
+<h2>Excluir</h2>
+
+<div>
+    <form action="/Admin/ExcluirConfirmar?id=@Model.RESTAUID" enctype="multipart/form-data" method="post">
+        <label>Prato: </label>
+        <label>@Model.RESTANOME</label>
+
+        <div>
+            <label>Preço: </label>
+            <label>@Model.RESTAPRECO.ToString("F")</label>
+
+        </div>
+
+        <div>
+            <label>Descrição: </label>
+            <label>@Model.RESTADESCRICAO</label>
+
+        </div>
+
+        <div>
+            <label>Preço Promocional: </label>
+            <label>@Model.RESTAPREPROMOCAO.ToString("F")</label>
+        </div>
+
+        <div>
+            <label>Categoria: </label>
+            <label>@Model.RESTACATEGORIA</label>
+        </div>
+
+        
+        <div>
+            <label>Disponibilidade: </label>
+            @if (Model.Disponibilidade)
+            {
+                <label>Disponivel</label>
+            }
+            else
+            {
+                <label>Não Disponivel</label>
+            }
+        </div>
+        <div>
+            <label>Oferta do dia: </label>
+            @if (Model.Oferta)
+            {
+                <label>Ativado</label>
+            }
+            else
+            {
+                <label>Não Ativado</label>
+            }
+        </div>
+
+        <div>
+            <label>Imagem: </label>
+            <label>
+                @{
+                    if (Model.imagem != null)
+                    {
+                        var base64 = Convert.ToBase64String(Model.imagem);
+                        var imgSrc = String.Format("data:image/jpg/gif/png;base64,{0}", base64);
+                        <img src='@imgSrc' style="max-width:100px; max-height:100px;" />
+                    }
+                    else
+                    {
+                        <label>Sem Imagem</label>
+                    }
+                        }
+             </label>
+           
+        </div>
+
+
+        <div>
+            <a href="/Admin/ListPratos"> <button type="button" class="btn btn-primary">Voltar</button></a>
+            <a href="/Admin/ListPratos"><button type="submit" class="btn btn-danger">Excluir</button> </a>
+        </div>
+
+    </form>
+
+</div>

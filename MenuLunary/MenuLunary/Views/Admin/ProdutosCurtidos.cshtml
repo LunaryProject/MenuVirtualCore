@@ -1,5 +1,75 @@
-﻿@*
+﻿@model IEnumerable<Projeto_Lunary.Models.Restaurante>
+
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    ViewBag.Title = "ProdutosCurtidos";
 }
+
+<h2 class="text-center">Produtos Mais Curtidos</h2>
+
+<body>
+    <main>
+        <form>
+            <table class="table table-striped thead-dark">
+                <thead class="thead-cor">
+                    <tr>
+                        <td>Id</td>
+                        <td>Prato</td>
+                        <td>Preço</td>
+                        <td>Descrição</td>
+                        <td>Preço Promoção</td>
+                        <td>Categoria</td>
+                        <td>Curtidas</td>
+                        <td></td>
+                        <br />
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        var curtidas = 0;
+                    }
+                    @foreach (var item in ViewBag.Rank)
+                    {
+                        <tr>
+                            <td>@item.RESTAUID</td>
+                            <td>@item.RESTANOME</td>
+                            <td>R$@item.RESTAPRECO.ToString("F")</td>
+                            <td>@item.RESTADESCRICAO</td>
+                            <td>@item.RESTAPREPROMOCAO</td>
+                            <td>@item.RESTACATEGORIA</td>
+                            <td>@item.Curtidas</td>
+                            <td>
+                                @{
+                                    var imgSrc = "";
+                                    if (item.imagem != null)
+                                    {
+                                        var base64 = Convert.ToBase64String(item.imagem);
+                                        imgSrc = String.Format("data:image/jpg/gif/png;base64,{0}", base64);
+                                        <img class="img" src="@imgSrc" alt="@item.RESTANOME" width="100" height="100" />
+                                    }
+                                }
+                            </td>
+                        </tr>
+
+                        <td></td>
+
+                        curtidas += 1;
+
+                        if (curtidas >= 5)
+                        {
+                            break;
+
+                        }
+                    }
+                </tbody>
+                
+            </table>
+        </form>
+    </main>
+</body>

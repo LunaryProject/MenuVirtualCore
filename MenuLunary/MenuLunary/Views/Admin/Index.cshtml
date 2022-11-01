@@ -1,5 +1,117 @@
-﻿@*
+﻿
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    ViewBag.Title = "Home Page";
 }
+
+<body class="dashboard">
+    <div class="div">
+        <div class="container">
+            <!-- Primeiro Card -->
+            <div class="card">
+                <div class="content">
+                    <a href="/Admin/ListPratos">
+                        <div class="col-md-12 ">
+                            <div>
+                                <h2>Lista de Pratos</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <br />
+            <br />
+
+            <!-- Segundo Card -->
+            <div class="card">
+                <div class="content">
+                    <a href="/Admin/Create">
+                        <div class="col-md-12">
+                            <div>
+                                <h2>Criar Novos Produtos</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <br />
+            <br />
+            <!-- Terceiro Card -->
+            <div class="card">
+                <div class="content">
+                    <a href="/Restaurante/Menu">
+                        <div class="col-md-12 ">
+                            <div>
+                                <h2>Menu Virtual</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+
+        <div class="container">
+            <!-- Segundo Card -->
+            @using (Html.BeginForm("QR", "QrCode", FormMethod.Post, new { id = "QrCoder" }))
+            {
+                <div class="card">
+                    <div class="content">
+                        <a href="javascript:document.getElementById('QrCoder').submit()">
+                            <div class="col-md-12 ">
+                                <div>
+                                    <h2>Gerar Qrcode</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            }
+                <div class="card">
+                    <div class="content">
+                        <a href="/Admin/ProdutosCurtidos">
+                            <div class="col-md-12 ">
+                                <div>
+                                    <h2>Produtos Mais Curtidos</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <a href="/Campanha/index">
+                            <div class="col-md-9 ">
+                                <div>
+                                    <h2>Campanhas</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+    <br />
+    <br />
+
+
+    @section scripts{
+
+        <script>
+            $('#QrCode').click(function () {
+                window.location.href = "/Qrcode/Qr"
+                var url = "/Qrcode/Qr"
+                $.post(url);
+            });
+        </script>
+
+
+    }
+
+
+</body>
