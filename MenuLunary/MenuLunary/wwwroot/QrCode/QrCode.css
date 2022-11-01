@@ -1,0 +1,27 @@
+﻿body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #dcd1cd 35%, rgba(0,212,255,1) 100%);
+}
+
+.container {
+    height: 350px;
+    background: #fff;
+    max-width: 410px;
+    border-radius: 7px;
+    padding: 16px 25px;
+    transition: height 0.5s ease;
+}
+
+    .container .qr-code {
+        display: flex;
+        opacity: 0;
+        pointer-events: none;
+        padding: 33px 0;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #987a71;
+    }

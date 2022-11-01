@@ -1,0 +1,419 @@
+﻿body {
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(https://img.freepik.com/vetores-premium/formas-geometricas-abstratas-de-ouro-vermelho-sobre-fundo-branco-adequado-para-plano-de-fundo-de-apresentacao-banner-pagina-de-destino-da-web-interface-do-usuario-aplicativo-movel-design-editorial-folheto-banner-e-outras-ocasioes-relacionadas_181182-14477.jpg);
+    background-repeat: no-repeat;
+    background-size: 1600px 1590px;
+    position: relative;
+}
+
+
+.container {
+    width: 1150px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: 0.5s;
+    font-size: 2rem;
+}
+
+
+
+    .container .card {
+        position: relative;
+        padding: 10px;
+        width: 300px;
+        background-color: #fff;
+        margin: 20px;
+        border: 1px solid black;
+        border-radius: 20px;
+        overflow: hidden;
+        transition: 0.5s;
+        text-align: center;
+    }
+
+        .container .card .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+            .container .card .content p {
+                color: #666;
+                transition: 0.5s;
+            }
+
+            .container .card .content a {
+                position: relative;
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #000;
+                color: #fff;
+                border-radius: 40px;
+                text-decoration: none;
+                transition: 0.5s;
+                outline: none;
+                margin-top: 20px;
+            }
+
+        .container .card:hover {
+            background-color: brown;
+            color: white;
+            margin-top: -30px;
+            box-shadow: 2px 20px 25px #dc2e685d;
+            border-color: #dc2e69;
+        }
+
+            .container .card:hover img {
+                filter: invert(1);
+            }
+
+            .container .card:hover .content p {
+                color: white;
+            }
+
+            .container .card:hover .content a {
+                color: black;
+                Background-color: white;
+            }
+
+@media screen and (min-width: 350px) {
+    .container {
+        width: 400px;
+        margin-left: 14px;
+    }
+}
+
+@media screen and (min-width: 370px) {
+    .container {
+        width: 400px;
+        margin-left: 2px;
+    }
+}
+
+@media screen and (min-width: 390px) {
+    .container {
+        width: 400px;
+        margin-left: 0.9px;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .container {
+        margin-left: 2.5px;
+    }
+}
+
+@media screen and (min-width: 415px) {
+    .container {
+        margin-left: -1px;
+    }
+}
+
+@media screen and (min-width: 430px) {
+    .container {
+        width: 400px;
+        margin-left: 3px;
+    }
+
+        .container .card {
+            width: 350px;
+        }
+}
+
+@media screen and (min-width: 450px) {
+    .container {
+        margin-left: 9px;
+    }
+}
+
+@media screen and (min-width: 465px) {
+    .container {
+        margin-left: 13px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 495px) {
+    .container {
+        margin-left: 25px;
+    }
+}
+
+@media screen and (min-width: 510px) {
+    .container {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width: 525px) {
+    .container {
+        margin-left: 35px;
+    }
+}
+
+@media screen and (min-width: 540px) {
+    .container {
+        margin-left: 43px;
+    }
+}
+
+@media screen and (min-width: 555px) {
+    .container {
+        margin-left: 45px;
+    }
+}
+
+@media screen and (min-width: 570px) {
+    .container {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (min-width: 585px) {
+    .container {
+        margin-left: 55px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .container {
+        margin-left: 60px;
+    }
+}
+
+@media screen and (min-width: 615px) {
+    .container {
+        margin-left: 65px;
+    }
+}
+
+@media screen and (min-width: 630px) {
+    .container {
+        margin-left: 70px;
+    }
+}
+
+@media screen and (min-width: 645px) {
+    .container {
+        margin-left: 75px;
+    }
+}
+
+@media screen and (min-width: 660px) {
+    .container {
+        margin-left: 80px;
+    }
+}
+
+@media screen and (min-width: 675px) {
+    .container {
+        margin-left: 55px;
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 690px) {
+    .container {
+        margin-left: 60px;
+    }
+}
+
+@media screen and (min-width: 705px) {
+    .container {
+        margin-left: 65px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .container {
+        margin-left: 70px;
+    }
+}
+
+@media screen and (min-width: 735px) {
+    .container {
+        margin-left: 75px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .container {
+        margin-left: 80px;
+    }
+}
+
+@media screen and (min-width: 765px) {
+    .container {
+        margin-left: 87px;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    .container {
+        margin-left: 90px;
+    }
+}
+
+@media screen and (min-width: 795px) {
+    .container {
+        margin-left: 60px;
+    }
+}
+
+@media screen and (min-width: 810px) {
+    .container {
+        margin-left: 102px;
+    }
+}
+
+@media screen and (min-width: 825px) {
+    .container {
+        margin-left: 105px;
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .container {
+        margin-left: 110px;
+    }
+}
+
+@media screen and (min-width: 855px) {
+    .container {
+        margin-left: 115px;
+    }
+}
+
+@media screen and (min-width: 870px) {
+    .container {
+        margin-left: 120px;
+    }
+}
+
+@media screen and (min-width: 885px) {
+    .container {
+        margin-left: 125px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        margin-left: 130px;
+    }
+}
+
+@media screen and (min-width: 915px) {
+    .container {
+        width: 1150px;
+        margin-left: -40px;
+    }
+}
+
+@media screen and (min-width: 965px) {
+    .container {
+        width: 1150px;
+        margin-left: -60px;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .container {
+        width: 1150px;
+        margin-left: -14px;
+    }
+}
+
+@media screen and (min-width: 1030px) {
+    .container {
+        width: 1150px;
+        margin-left: -78px;
+    }
+}
+
+@media screen and (min-width: 1090px) {
+    .container {
+        width: 1150px;
+        margin-left: -65px;
+    }
+}
+
+@media screen and (min-width: 1140px) {
+    .container {
+        width: 1150px;
+        margin-left: -40px;
+    }
+}
+
+
+
+@media screen and (min-width: 1203px) {
+    .container {
+        width: 1150px;
+        margin-left: -25px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 1150px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (min-width: 1310px) {
+    .container {
+        width: 2150px;
+        margin-left: -180px;
+    }
+
+    body {
+        position: fixed;
+    }
+}
+
+
+
+/*@media screen and (max-width: 1031px) {
+    .container .card {    
+        width: 400px;  
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 965px) {
+    .container .card {
+        margin-left:5rem;
+        margin-right:2rem;
+        margin:10px;
+    }
+}
+
+@media screen and (max-width: 945px) {
+    .container .card {
+        margin-left: 100px;
+        
+        margin: 10px;
+    }
+}*/
+
+

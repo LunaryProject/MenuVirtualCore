@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-.campanhas {
+.carrossel {
     width: 400px;
     height: 250px;
     outline: 3px solid brown;
@@ -15,73 +15,73 @@
     overflow: hidden;
 }
 
-    .campanhas ul {
+    .carrossel ul {
         display: flex;
         list-style: none;
         width: 400px;
         height: 250px;
     }
 
-    .campanhas il {
+    .carrossel il {
         position: relative;
-        animation: slide 25s infinite ease-out;
+        animation: slide 15s infinite ease-out;
     }
-
 
 @keyframes slide {
     0% {
         left: 0px;
     }
 
-    10% {
+    8% {
         left: 0px;
     }
 
-    20% {
+    13% {
         left: -400px;
     }
 
-    30% {
+    21% {
         left: -400px;
     }
 
-    40% {
+    29% {
         left: -800px;
     }
 
-    50% {
+    37% {
         left: -800px;
     }
 
-    60% {
+    45% {
         left: -1200px;
     }
 
-    70% {
+    53% {
         left: -1200px;
     }
 
-    80% {
+    61% {
         left: -1600px;
     }
 
-    90% {
+    69% {
         left: -1600px;
     }
 
-    100% {
+    77% {
         left: 0px;
     }
 }
 
 @media screen and (max-width: 435px) {
-    .campanhas {
+    .carrossel {
         width: 350px;
     }
 }
 
 @media screen and (max-width: 395px) {
-    .campanhas {
+    .carrossel {
         width: 300px;
+        height: 230px
     }
 }
