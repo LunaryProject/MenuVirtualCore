@@ -1,5 +1,7 @@
 ﻿using MenuLunary.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Web.Mvc;
 
 namespace MenuLunary.Controllers
 {

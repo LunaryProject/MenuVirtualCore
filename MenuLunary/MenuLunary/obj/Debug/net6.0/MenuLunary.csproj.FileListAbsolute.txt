@@ -1,0 +1,8 @@
+C:\Users\android\Documents\GitHub\MenuVirtualCore\MenuLunary\MenuLunary\obj\Debug\net6.0\MenuLunary.csproj.AssemblyReference.cache
+C:\Users\android\Documents\GitHub\MenuVirtualCore\MenuLunary\MenuLunary\obj\Debug\net6.0\MenuLunary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\android\Documents\GitHub\MenuVirtualCore\MenuLunary\MenuLunary\obj\Debug\net6.0\MenuLunary.AssemblyInfoInputs.cache
+C:\Users\android\Documents\GitHub\MenuVirtualCore\MenuLunary\MenuLunary\obj\Debug\net6.0\MenuLunary.AssemblyInfo.cs
+C:\Users\android\Documents\GitHub\MenuVirtualCore\MenuLunary\MenuLunary\obj\Debug\net6.0\MenuLunary.csproj.CoreCompileInputs.cache
+C:\Users\android\Documents\GitHub\MenuVirtualCore\MenuLunary\MenuLunary\obj\Debug\net6.0\MenuLunary.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\android\Documents\GitHub\MenuVirtualCore\MenuLunary\MenuLunary\obj\Debug\net6.0\MenuLunary.RazorAssemblyInfo.cache
+C:\Users\android\Documents\GitHub\MenuVirtualCore\MenuLunary\MenuLunary\obj\Debug\net6.0\MenuLunary.RazorAssemblyInfo.cs
