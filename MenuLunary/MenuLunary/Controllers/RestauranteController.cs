@@ -1,12 +1,19 @@
-﻿using MenuLunary.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using MenuLunary.Models;
 
 namespace MenuLunary.Controllers
 {
     public class RestauranteController : Controller
     {
         // GET: Restaurante
-   
+
+        private readonly Contexto bd;
+        public RestauranteController(Contexto contexto)
+        {
+            bd = contexto;
+        }
+        
+
         [HttpGet]
         public ActionResult Menu()
         {
@@ -43,6 +50,5 @@ namespace MenuLunary.Controllers
             bd.SaveChanges();
             return RedirectToAction("menu");
         }
-
     }
 }

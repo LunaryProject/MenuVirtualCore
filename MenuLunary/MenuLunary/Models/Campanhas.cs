@@ -6,6 +6,7 @@ namespace MenuLunary.Models
     [Table("Campanhas")]
     public class Campanhas
     {
+        [Key]
         [Column("ID")]
         [Display(Name = "ID")]
         public int CAMID { get; set; }

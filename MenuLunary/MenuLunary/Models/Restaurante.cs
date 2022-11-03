@@ -6,6 +6,7 @@ namespace MenuLunary.Models
     [Table("Restaurante")]
     public class Restaurante
     {
+        [Key]
         [Column("id")]
         [Display(Name = "ID")]
         public int RESTAUID { get; set; }
@@ -28,7 +29,7 @@ namespace MenuLunary.Models
         [Column("Categoria")]
         [Display(Name = "Categoria")]
         public string RESTACATEGORIA { get; set; }
-        [Column("")]
+        [Column("imagem")]
         [Display(Name = "imagem")]
         public byte[] imagem { get; set; }
 
@@ -40,7 +41,7 @@ namespace MenuLunary.Models
         [Display(Name = "Promocao")]
         public double RESTAPREPROMOCAO { get; set; }
 
-        [Column("")]
+        [Column("Disponibilidade")]
         [Display(Name = "Disponibilidade")]
         public bool Disponibilidade { get; set; }
         [Column("Curtidas")]

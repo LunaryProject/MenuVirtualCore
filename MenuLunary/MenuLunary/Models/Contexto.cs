@@ -9,6 +9,12 @@ namespace MenuLunary.Models
 
         }
 
+        
         public DbSet<Restaurante> Restaurante { get; set; }
+        public DbSet<Estabelicimento> Estabelicimento { get; set; }
+        public DbSet<Categorias> Categorias { get; set; }
+        public DbSet<Campanhas> Campanhas { get; set; }
+
+
     }
 }

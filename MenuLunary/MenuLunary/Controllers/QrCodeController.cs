@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MenuLunary.Models;
 using QRCoder;
+using iTextSharp.text.pdf.qrcode;
 
 namespace MenuLunary.Controllers
 {
@@ -7,7 +9,11 @@ namespace MenuLunary.Controllers
     {
         // GET: QrCode
 
-        
+        private readonly Contexto bd;
+        public QrCodeController(Contexto contexto)
+        {
+            bd = contexto;
+        }
         public ActionResult QR()
         {
             return View();

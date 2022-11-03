@@ -5,6 +5,14 @@ namespace MenuLunary.Controllers
 {
     public class CampanhaController : Controller
     {
+        // GET: Campanha
+
+        private readonly Contexto bd;
+        public CampanhaController(Contexto contexto)
+        {
+            bd = contexto;
+        }
+
         public ActionResult Index()
         {
             return View(bd.Campanhas.ToList());

@@ -1,10 +1,17 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using MenuLunary.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Web.Mvc;
 
 namespace MenuLunary.Controllers
 {
     public class ContaController : Controller
     {
+        private readonly Contexto bd;
+        public ContaController(Contexto contexto)
+        {
+            bd = contexto;
+        }
+
         [AllowAnonymous]
 
         public ActionResult Login(string returnUrl)
@@ -52,5 +59,6 @@ namespace MenuLunary.Controllers
             FormsAuthentication.SignOut();
             return RedirectToAction("Index", "Admin");
         }
+
     }
 }

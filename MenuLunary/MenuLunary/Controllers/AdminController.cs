@@ -1,12 +1,17 @@
-﻿using MenuLunary.Models;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Web.Mvc;
+using MenuLunary.Models;
 
 namespace MenuLunary.Controllers
 {
+    [Authorize]
     public class AdminController : Controller
     {
+        private readonly Contexto bd;
+        public AdminController(Contexto contexto)
+        {
+            bd = contexto;
+        }
         // GET: Admin
         public ActionResult Index()
         {
@@ -200,5 +205,6 @@ namespace MenuLunary.Controllers
             }
             return View();
         }
+
     }
 }

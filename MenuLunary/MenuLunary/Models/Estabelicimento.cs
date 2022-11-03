@@ -6,6 +6,7 @@ namespace MenuLunary.Models
     [Table("Estabelicimento")]
     public class Estabelicimento
     {
+        [Key]
         [Column("ID")]
         [Display(Name = "ID")]
         public int ESTABID { get; set; }
