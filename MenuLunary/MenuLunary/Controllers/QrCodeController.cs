@@ -1,8 +1,6 @@
 ﻿using MenuLunary.Models;
 using QRCoder;
 using System.Web.Mvc;
-
-
 namespace MenuLunary.Controllers
 {
     public class QrCodeController : Controller

@@ -1,6 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Web.Mvc;
 using MenuLunary.Models;
+using Controller = Microsoft.AspNetCore.Mvc.Controller;
+using PagedList;
+using ActionResult = Microsoft.AspNetCore.Mvc.ActionResult;
+using HttpPostAttribute = System.Web.Mvc.HttpPostAttribute;
+using HttpGetAttribute = System.Web.Mvc.HttpGetAttribute;
+using Microsoft.EntityFrameworkCore;
 
 namespace MenuLunary.Controllers
 {
@@ -188,23 +194,6 @@ namespace MenuLunary.Controllers
             return View();
         }
 
-        [HttpPost]
-        public ActionResult QR(string qrcode)
-        {
-            using (MemoryStream ms = new MemoryStream())
-            {
-                QRCodeGenerator qRCodeGenerator = new QRCodeGenerator();
-                QRCodeData qrCodeData = qRCodeGenerator.CreateQrCode(qrcode, QRCodeGenerator.ECCLevel.Q);
-                QRCode qrCode = new QRCode(qrCodeData);
-
-                using (Bitmap bitmap = qrCode.GetGraphic(20))
-                {
-                    bitmap.Save(ms, ImageFormat.Png);
-                    ViewBag.QRCodeImage = "data:image/png;base64," + Convert.ToBase64String(ms.ToArray());
-                }
-            }
-            return View();
-        }
-
+      
     }
 }

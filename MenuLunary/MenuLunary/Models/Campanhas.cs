@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
+
 namespace MenuLunary.Models
 {
     [Table("Campanhas")]
@@ -19,5 +20,6 @@ namespace MenuLunary.Models
         [Column("Preço")]
         [Display(Name = "Preco")]
         public double CAMPRECO { get; set; }
+
     }
 }

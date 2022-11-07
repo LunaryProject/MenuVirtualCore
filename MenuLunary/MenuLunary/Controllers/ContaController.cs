@@ -1,6 +1,11 @@
 ﻿using MenuLunary.Models;
 using Microsoft.AspNetCore.Mvc;
+using Projeto_Lunary.Models;
 using System.Web.Mvc;
+using System.Web.Security;
+using ActionResult = System.Web.Mvc.ActionResult;
+using Controller = Microsoft.AspNetCore.Mvc.Controller;
+using HttpPostAttribute = System.Web.Mvc.HttpPostAttribute;
 
 namespace MenuLunary.Controllers
 {
