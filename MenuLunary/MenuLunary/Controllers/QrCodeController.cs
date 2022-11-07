@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using MenuLunary.Models;
+﻿using MenuLunary.Models;
 using QRCoder;
-using iTextSharp.text.pdf.qrcode;
+using System.Web.Mvc;
+
 
 namespace MenuLunary.Controllers
 {
