@@ -1,13 +1,16 @@
 ﻿@model IPagedList<MenuLunary.Models.Restaurante>
-@using PagedList.Mvc;
-@using PagedList;
-@using System.Web.Mvc;
-
 
 @{
     ViewBag.Title = "Pratos";
 
 }
+
+@using PagedList.Mvc;
+@using PagedList;
+@using System.Web.Mvc;
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, AuthoringTagHelpers
 
 <link href="~/Content/Admin/CRUD.css" rel="stylesheet" />
 
@@ -80,7 +83,7 @@
         </table>
 
         <div class="text-center">
-            @Html.PagedListPager(Model, i => Url.Action("ListPratos", "Admin", new { i, procurar = Request.QueryString["procurar"] }))
+            @Html.(PagedListPager(Model, i => Url.Action("ListPratos", "Admin", new { i, procurar = Request.QueryString["procurar"] })))
         </div>
 
     </main>
