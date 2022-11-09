@@ -38,7 +38,7 @@ namespace MenuLunary.Controllers
 
         [HttpPost]
 
-        public ActionResult Create(int? id, string nome, float preco, string descricao, float precopromocao, string categoria, HttpPostedFileBase imagem, string oferta, string disponibilidade)
+        public ActionResult Create(int? id, string nome, float preco, string descricao, float precopromocao, string categoria, IFormFile imagem, string oferta, string disponibilidade)
         {
             Restaurante novoRestaurante = new Restaurante();
             novoRestaurante.RESTANOME = nome;
@@ -48,10 +48,12 @@ namespace MenuLunary.Controllers
             novoRestaurante.RESTACATEGORIA = categoria;
             if (imagem != null)
             {
-                using (var memoryStream = new MemoryStream())
+                using (var ms = new MemoryStream())
                 {
-                    imagem.InputStream.CopyTo(memoryStream);
-                    novoRestaurante.imagem = memoryStream.ToArray();
+                    imagem.CopyTo(ms);
+                    var fileBytes = ms.ToArray();
+                    string s = Convert.ToBase64String(fileBytes);
+                    novoRestaurante.imagem = fileBytes.ToArray();
                 }
             }
 
@@ -106,7 +108,7 @@ namespace MenuLunary.Controllers
         [HttpPost]
         [HandleError]
 
-        public ActionResult Editar(int? id, string nome, float preco, string descricao, float precopromocao, string categoria, HttpPostedFileBase imagem, string oferta, string disponibilidade)
+        public ActionResult Editar(int? id, string nome, float preco, string descricao, float precopromocao, string categoria, IFormFile imagem, string oferta, string disponibilidade)
         {
             Restaurante atualizarrestaurante = bd.Restaurante.ToList().Where(x => x.RESTAUID == id).First();
             atualizarrestaurante.RESTANOME = nome;
@@ -117,10 +119,12 @@ namespace MenuLunary.Controllers
 
             if (imagem != null)
             {
-                using (var memoryStream = new MemoryStream())
+                using (var ms = new MemoryStream())
                 {
-                    imagem.InputStream.CopyTo(memoryStream);
-                    atualizarrestaurante.imagem = memoryStream.ToArray();
+                    imagem.CopyTo(ms);
+                    var fileBytes = ms.ToArray();
+                    string s = Convert.ToBase64String(fileBytes);
+                    atualizarrestaurante.imagem = fileBytes.ToArray();
                 }
             }
 

@@ -24,7 +24,7 @@ namespace MenuLunary.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create(string Descricao, float CAMPRECO, HttpPostedFileBase Foto)
+        public ActionResult Create(string Descricao, float CAMPRECO, IFormFile Foto)
         {
             Campanhas novacampanha = new Campanhas();
             novacampanha.CAMDESCRICAO = Descricao;
@@ -33,10 +33,12 @@ namespace MenuLunary.Controllers
             {
                 try
                 {
-                    using (var memoryStream = new MemoryStream())
+                    using (var ms = new MemoryStream())
                     {
-                        Foto.InputStream.CopyTo(memoryStream);
-                        novacampanha.CAMFOTO = memoryStream.ToArray();
+                        Foto.CopyTo(ms);
+                        var fileBytes = ms.ToArray();
+                        string s = Convert.ToBase64String(fileBytes);
+                        novacampanha.CAMFOTO = fileBytes.ToArray();
                     }
                 }
                 catch (Exception)
@@ -58,17 +60,19 @@ namespace MenuLunary.Controllers
         }
 
         [HttpPost]
-        public ActionResult Editar(int? id, string Descricao, float preco, HttpPostedFileBase Foto)
+        public ActionResult Editar(int? id, string Descricao, float preco, IFormFile Foto)
         {
             Campanhas atualizarcampanhas = bd.Campanhas.ToList().Where(x => x.CAMID == id).First();
             atualizarcampanhas.CAMDESCRICAO = Descricao;
             atualizarcampanhas.CAMPRECO = preco;
             if (Foto != null)
             {
-                using (var memoryStream = new MemoryStream())
+                using (var ms = new MemoryStream())
                 {
-                    Foto.InputStream.CopyTo(memoryStream);
-                    atualizarcampanhas.CAMFOTO = memoryStream.ToArray();
+                    Foto.CopyTo(ms);
+                    var fileBytes = ms.ToArray();
+                    string s = Convert.ToBase64String(fileBytes);
+                    atualizarcampanhas.CAMFOTO = fileBytes.ToArray();
                 }
             }
             bd.Entry(atualizarcampanhas).State = EntityState.Modified;
