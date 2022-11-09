@@ -26,7 +26,7 @@ namespace MenuLunary.Controllers
             {
                 
 
-                qrcode = "/Restaurante/Menu" + Request.Url.Authority;
+                qrcode = Request.Url.Authority + "/Restaurante/Menu";
 
                 QRCodeGenerator QRCodeGenerator = new QRCodeGenerator();
                 QRCodeData QRCodeData = QRCodeGenerator.CreateQrCode(qrcode, QRCodeGenerator.ECCLevel.Q);
