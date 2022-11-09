@@ -14,12 +14,10 @@
         "outputPath": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\android\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -260,6 +258,10 @@
             "System.Diagnostics.DiagnosticSource": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "System.Memory": {
               "target": "Package",
