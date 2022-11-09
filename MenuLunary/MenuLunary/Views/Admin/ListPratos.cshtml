@@ -1,18 +1,18 @@
-﻿@model IPagedList<MenuLunary.Models.Restaurante>
+﻿@model IPagedList<Projeto_Lunary.Models.Restaurante>
 
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
 @{
-    ViewBag.Title = "Pratos";
-
+     ViewBag.Title = "Pratos";
 }
-
 @using PagedList.Mvc;
 @using PagedList;
-@using System.Web.Mvc;
 
-@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-@addTagHelper *, AuthoringTagHelpers
+<head>
+    <link href="~/Admin/Crud.css" rel="stylesheet" />
+</head>
 
-<link href="~/Content/Admin/CRUD.css" rel="stylesheet" />
 
 <body>
     <h2 class="text-center" style=" background-color:gold;">Pratos</h2>
@@ -81,20 +81,10 @@
 
             </tbody>
         </table>
-
         <div class="text-center">
-            @Html.(PagedListPager(Model, i => Url.Action("ListPratos", "Admin", new { i, procurar = Request.QueryString["procurar"] }))
+            @Html.PagedListPager(Model, i => Url.Action("ListPratos", "Admin", new { i, procurar = Request.QueryString["procurar"] }))
         </div>
 
     </main>
 
 </body>
-
-
-
-
-
-
-
-
-
