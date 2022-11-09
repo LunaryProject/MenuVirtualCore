@@ -29,7 +29,7 @@ namespace MenuLunary.Controllers
                 QRCodeData qrCodeData = qRCodeGenerator.CreateQrCode(qrcode, QRCodeGenerator.ECCLevel.Q);
                 QRCode qrCode = new QRCode(qrCodeData);
 
-                using (Bitmap bitmap = qrCode.GetGraphic(20))
+                using (var bitmap = qrCode.GetGraphic(20))
                 {
                     bitmap.Save(ms, ImageFormat.Png);
                     ViewBag.QRCodeImage = "data:image/png;base64," + Convert.ToBase64String(ms.ToArray());
@@ -38,5 +38,17 @@ namespace MenuLunary.Controllers
             return View();
         }
 
+    }
+
+    internal class QRCode
+    {
+        public QRCode(QRCodeData qrCodeData)
+        {
+        }
+
+        internal Bitmap GetGraphic(int v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
