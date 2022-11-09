@@ -1,18 +1,17 @@
-﻿using iTextSharp.text.pdf.qrcode;
+﻿using MenuLunary.Models;
 using QRCoder;
-using System.DrawingCore;
-using System.DrawingCore.Imaging;
+using System;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Web.Mvc;
 
 namespace MenuLunary.Controllers
 {
-    [Authorize]
-
-
-    public class QrCodeController : Controller
+    public class QRCoderController : Controller
     {
         // GET: QrCode
-        public ActionResult Qr()
+        public ActionResult QR()
         {
             return View();
         }
@@ -22,7 +21,10 @@ namespace MenuLunary.Controllers
         {
             using (MemoryStream ms = new MemoryStream())
             {
+                
+
                 qrcode = Request.Url.Authority + "/Restaurante/Menu";
+
                 QRCodeGenerator qRCodeGenerator = new QRCodeGenerator();
                 QRCodeData qrCodeData = qRCodeGenerator.CreateQrCode(qrcode, QRCodeGenerator.ECCLevel.Q);
                 QRCode qrCode = new QRCode(qrCodeData);

@@ -257,6 +257,10 @@
               "target": "Package",
               "version": "[4.5.5, )"
             },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
             "System.Numerics.Vectors": {
               "target": "Package",
               "version": "[4.5.0, )"
@@ -280,10 +284,6 @@
             "WebGrease": {
               "target": "Package",
               "version": "[1.6.0, )"
-            },
-            "ZKWeb.Fork.QRCoder": {
-              "target": "Package",
-              "version": "[1.3.0, )"
             },
             "iTextSharp": {
               "target": "Package",
