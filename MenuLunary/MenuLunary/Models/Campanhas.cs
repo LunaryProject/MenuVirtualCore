@@ -13,10 +13,10 @@ namespace MenuLunary.Models
         public int CAMID { get; set; }
         [Column("Descrição")]
         [Display(Name = "Descricao")]
-        public string CAMDESCRICAO { get; set; }
+        public string? CAMDESCRICAO { get; set; }
         [Column("Foto")]
         [Display(Name = "foto")]
-        public byte[] CAMFOTO { get; set; }
+        public byte[]? CAMFOTO { get; set; }
         [Column("Preço")]
         [Display(Name = "Preco")]
         public double CAMPRECO { get; set; }

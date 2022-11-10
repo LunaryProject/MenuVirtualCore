@@ -12,29 +12,29 @@ namespace MenuLunary.Models
         public int ESTABID { get; set; }
         [Column("Nome")]
         [Display(Name = "Nome")]
-        public string ESTABNOME { get; set; }
+        public string? ESTABNOME { get; set; }
 
         [Column("Endereço")]
         [Display(Name = "Endereco")]
-        public string ESTABENDERECO { get; set; }
+        public string? ESTABENDERECO { get; set; }
         [Column("Bairro")]
         [Display(Name = "Bairro")]
-        public string ESTABBAIRRO { get; set; }
+        public string? ESTABBAIRRO { get; set; }
 
         [Column("Telefone")]
         [Display(Name = "Telefone")]
-        public string ESTATELEFONE { get; set; }
+        public string? ESTATELEFONE { get; set; }
         [Column("CEP")]
         [Display(Name = "CEP")]
-        public string ESTABCEP { get; set; }
+        public string? ESTABCEP { get; set; }
         [Column("Login")]
         [Display(Name = "Login")]
-        public string ESTABLOGIN { get; set; }
+        public string? ESTABLOGIN { get; set; }
         [Column("Senha")]
         [Display(Name = "Senha")]
-        public string ESTABSENHA { get; set; }
+        public string? ESTABSENHA { get; set; }
         [Column("Tipo")]
         [Display(Name = "Tipo")]
-        public string ESTATIPO { get; set; }
+        public string? ESTATIPO { get; set; }
     }
 }

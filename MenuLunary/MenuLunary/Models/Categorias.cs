@@ -9,6 +9,6 @@ namespace MenuLunary.Models
         [Key]
         [Column("Categoria")]
         [Display(Name = "Categoria")]
-        public string RESTACATEGORIA { get; set; }
+        public string? RESTACATEGORIA { get; set; }
     }
 }

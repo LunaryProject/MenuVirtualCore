@@ -13,7 +13,7 @@ namespace MenuLunary.Models
 
         [Column("Nome")]
         [Display(Name = "Nome")]
-        public string RESTANOME { get; set; }
+        public string? RESTANOME { get; set; }
         internal static object Where(Func<object, bool> value)
         {
             throw new NotImplementedException();
@@ -25,13 +25,13 @@ namespace MenuLunary.Models
 
         [Column("Descrição")]
         [Display(Name = "Descricao")]
-        public string RESTADESCRICAO { get; set; }
+        public string? RESTADESCRICAO { get; set; }
         [Column("Categoria")]
         [Display(Name = "Categoria")]
-        public string RESTACATEGORIA { get; set; }
+        public string? RESTACATEGORIA { get; set; }
         [Column("imagem")]
         [Display(Name = "imagem")]
-        public byte[] imagem { get; set; }
+        public byte[]? imagem { get; set; }
 
         [Column("Oferta")]
         [Display(Name = "Oferta")]
