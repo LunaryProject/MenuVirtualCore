@@ -1,0 +1,381 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\MenuLunary.bundle.scp.css",
+      "PackagePath": "staticwebassets\\MenuLunary.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\Admin\\Crud.css",
+      "PackagePath": "staticwebassets\\Admin\\Crud.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\Admin\\MaisCurtidos.css",
+      "PackagePath": "staticwebassets\\Admin\\MaisCurtidos.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\Admin\\PictureInput.css",
+      "PackagePath": "staticwebassets\\Admin\\PictureInput.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\Admin\\TelaAdmin.css",
+      "PackagePath": "staticwebassets\\Admin\\TelaAdmin.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\Campanha\\Campanha.css",
+      "PackagePath": "staticwebassets\\Campanha\\Campanha.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\Dashboard\\Dashboard.css",
+      "PackagePath": "staticwebassets\\Dashboard\\Dashboard.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\Menu\\Img\\HeartAnimation.png",
+      "PackagePath": "staticwebassets\\Menu\\Img\\HeartAnimation.png"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\Menu\\Img\\LogoLunary.png",
+      "PackagePath": "staticwebassets\\Menu\\Img\\LogoLunary.png"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\Menu\\Img\\Logo_Txt.png",
+      "PackagePath": "staticwebassets\\Menu\\Img\\Logo_Txt.png"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\Menu\\Img\\PratoExemplo.png",
+      "PackagePath": "staticwebassets\\Menu\\Img\\PratoExemplo.png"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\Menu\\Img\\bookmark-heart-regular-24.png",
+      "PackagePath": "staticwebassets\\Menu\\Img\\bookmark-heart-regular-24.png"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\Menu\\Img\\icons8-restaurant-60.png",
+      "PackagePath": "staticwebassets\\Menu\\Img\\icons8-restaurant-60.png"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\Menu\\Menu.css",
+      "PackagePath": "staticwebassets\\Menu\\Menu.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\Menu\\Modal.css",
+      "PackagePath": "staticwebassets\\Menu\\Modal.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\Menu\\Preloader.css",
+      "PackagePath": "staticwebassets\\Menu\\Preloader.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\Modal\\Modal.css",
+      "PackagePath": "staticwebassets\\Modal\\Modal.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\PagedList\\PagedList.css",
+      "PackagePath": "staticwebassets\\PagedList\\PagedList.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\Preco\\Preco.css",
+      "PackagePath": "staticwebassets\\Preco\\Preco.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\QrCode\\QrCode.css",
+      "PackagePath": "staticwebassets\\QrCode\\QrCode.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\Rank\\Rank.css",
+      "PackagePath": "staticwebassets\\Rank\\Rank.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\Script\\Admin\\InputPicture.js",
+      "PackagePath": "staticwebassets\\Script\\Admin\\InputPicture.js"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\Script\\Menu\\Caixinha.js",
+      "PackagePath": "staticwebassets\\Script\\Menu\\Caixinha.js"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\Script\\Menu\\FilterCate.js",
+      "PackagePath": "staticwebassets\\Script\\Menu\\FilterCate.js"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\Script\\Menu\\HeartClick.js",
+      "PackagePath": "staticwebassets\\Script\\Menu\\HeartClick.js"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\Script\\Menu\\ModalClick.js",
+      "PackagePath": "staticwebassets\\Script\\Menu\\ModalClick.js"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\Script\\Menu\\Pagina.js",
+      "PackagePath": "staticwebassets\\Script\\Menu\\Pagina.js"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\Script\\Menu\\PreloaderTimer.js",
+      "PackagePath": "staticwebassets\\Script\\Menu\\PreloaderTimer.js"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\Script\\Menu\\ScrollToTop.js",
+      "PackagePath": "staticwebassets\\Script\\Menu\\ScrollToTop.js"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\Script\\Menu\\ToggleTema.js",
+      "PackagePath": "staticwebassets\\Script\\Menu\\ToggleTema.js"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\Script\\site.js",
+      "PackagePath": "staticwebassets\\Script\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\MenuLunary\\MenuLunary\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.MenuLunary.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.MenuLunary.props",
+      "PackagePath": "build\\MenuLunary.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.MenuLunary.props",
+      "PackagePath": "buildMultiTargeting\\MenuLunary.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.MenuLunary.props",
+      "PackagePath": "buildTransitive\\MenuLunary.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
