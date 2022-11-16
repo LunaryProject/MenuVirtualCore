@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zFjIw7wTZUNzpBajrbjjj27oyA62L3bDLjG9AmwkaKVbsSSNRvCnJIwlymWTw8M03Ew9dZczIs+q7fReOQMLwg==",
+  "dgSpecHash": "YZRpaTU35Ha3IljiQ6btxgByVutosd8ojmEBiZ3sXvN8YcEj7UW45IhFB7UVRoFS4tXQXMhfKkQkwrVeQWAyrw==",
   "success": true,
   "projectFilePath": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\LunaryCore\\LunaryCore\\LunaryCore.csproj",
   "expectedPackageFiles": [
@@ -56,7 +56,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
     "C:\\Users\\android\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\android\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
-    "C:\\Users\\android\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.resources.resourcemanager\\4.3.0\\system.resources.resourcemanager.4.3.0.nupkg.sha512",
