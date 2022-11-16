@@ -1,0 +1,46 @@
+﻿@model LunaryCore.Models.Campanhas
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Excluir";
+}
+
+<h2>Excluir</h2>
+
+<div>
+    <form action="/Campanha/ExcluirConfirma?id=@Model.CAMID" enctype="multipart/form-data" method="post">
+        <div>
+            <label>Descrição: </label>
+            <label>@Model.CAMDESCRICAO</label>
+
+        </div>
+
+        <div>
+            <label></label>
+            <td>
+                @{
+                    if (Model.CAMFOTO != null)
+                    {
+                        var base64 = Convert.ToBase64String(Model.CAMFOTO);
+                        var imgSrc = String.Format("data:image/jpg/gif/png;base64,{0}", base64);
+                        <img src='@imgSrc' style="max-width:210px; max-height:450px;" />
+                    }
+                }
+            </td>
+        </div>
+
+        <div>
+            <label>Preço: </label>
+            <label>@Model.CAMPRECO.ToString("F")</label>
+        </div>
+
+        <div>
+            <a href="/Campanhas/Index"><button type="button" class="btn btn-primary">Voltar</button></a>
+            <a href="/Campanhas/Index"><button type="submit" class="btn btn-danger">Excluir</button></a>
+        </div>
+
+    </form>
+
+</div>

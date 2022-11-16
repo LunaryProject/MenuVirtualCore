@@ -1,0 +1,130 @@
+﻿@model LunaryCore.Models.Restaurante
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+     ViewBag.Title = "Editar";
+    var base64 = Convert.ToBase64String(Model.imagem);
+    var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
+}
+
+<head>
+    <link rel="stylesheet" href="~/Admin/PictureInput.css"/>
+</head>
+
+
+<h2>Editar</h2>
+
+<div>
+    <form action="/Admin/Editar?id=@Model.RESTAUID" enctype="multipart/form-data" method="post">
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" maxlength="500" id="nome" name="nome" value="@Model.RESTANOME" required />
+        <div>
+            <label for="preco">Preço</label>
+            <input type="text" class="form-control" id="" name="preco" step="0.010" value="@Model.RESTAPRECO.ToString("F")" required />
+        </div>
+        <div>
+            <label for="descricao">Descrição</label>
+            <input type="text" class="form-control" id="" maxlength="500" name="descricao" value="@Model.RESTADESCRICAO">
+        </div>
+        <div>
+            <label for="precopromocao">Preço Promocional</label>
+            <input type="text" class="form-control" id="precopromocao" step="0.010" name="precopromocao" value="@Model.RESTAPREPROMOCAO">
+        </div>
+        <div>
+            <br />
+            <label for="categoria">Categoria: </label>
+            <select id="categoria" name="categoria">
+                @foreach (var item in ViewBag.listacategoria)
+                {
+                    if (@item.RESTACATEGORIA == Model.RESTACATEGORIA)
+                    {
+                        <option selected>@item.RESTACATEGORIA</option>
+                    }
+                    else
+                    {
+                        <option>@item.RESTACATEGORIA</option>
+                    }
+
+                }
+            </select>
+        </div>
+        <div class="form-group" typeof="checkbox">
+
+            <!--  Disponibilidade  -->
+            @if (Model.Disponibilidade)
+            {
+                <input type='checkbox' value='true' onload="this.value=this.checked" onchange="this.value=this.checked" checked name="disponibilidade" id="disponibilidade">
+            }
+            else
+            {
+                <input type='checkbox' value='false' onload="this.value=this.checked" onchange="this.value=this.checked" name="disponibilidade" id="disponibilidade">
+            }
+            <label class="form-check-label" for="disponibilidade">
+                Disponivel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </label>
+            <!--  Oferta do Dia  -->
+            @if (Model.Oferta)
+            {
+                <input checked type='checkbox' value='true' onload="this.value=this.checked" onchange="this.value=this.checked" name="oferta" id="oferta">
+            }
+            else
+            {
+                <input type='checkbox' value='false' onload="this.value=this.checked" onchange="this.value=this.checked" name="oferta" id="oferta">
+            }
+            <label class="form-check-label" for="oferta">
+                Oferta do Dia
+            </label>
+        </div>
+        <div class="form-group">
+            <div>
+                <label onclick="InputImgEdit(@imgSrc)" onload="InputImgEdit(@imgSrc)" for="arquivo">Imagem:</label>
+            </div>
+            @{
+                if (Model.imagem != null)
+                {
+                    base64 = Convert.ToBase64String(Model.imagem);
+                    imgSrc = String.Format("data:image/gif;base64,{0}", base64);
+                    <label onload="InputImgCreate()" class="picture" for="imagem" tabIndex="0">
+                    <span title="Clique para adicionar Imagem" class="imagem">
+                        <img class="imagem" id="imagemEdit"/>
+                    </span> 
+                        
+                    </label>
+                    <input type="file" class="form-control" name="imagem" id="imagem">
+                }
+                else
+                {
+                    <label onload="InputImgCreate()" class="picture" for="imagem" tabIndex="0">
+                        <span title="Clique para adicionar Imagem" class="imagem"></span>                        
+                    </label>
+                    <input type="file" class="form-control" name="imagem" id="imagem">
+                }
+            }
+
+        </div>
+        <br />
+        <div>
+            <a href="/Admin/ListPratos"><button type="button" class="btn btn-primary">Voltar</button>  </a>
+            <a href="/Admin/ListPratos"><button type="submit" class="btn btn-success">Salvar</button>  </a>
+        </div>
+
+    </form>
+
+</div>
+
+@section scripts {
+    <script src="~/Scripts/Admin/InputPicture.js"></script>
+
+    <script>
+
+
+
+        window.onload = () => {
+            document.queryCommandIndeterm
+            InputImgEdit();
+        }
+        $("#imagemEdit").attr('src', '@imgSrc');
+    </script>
+}

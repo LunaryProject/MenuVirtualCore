@@ -1,0 +1,25 @@
+﻿<link href="~/Content/QRCODE.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "QR";
+
+}
+
+@using (Html.BeginForm("QR", "QrCode", FormMethod.Post))
+{
+    <div>
+
+       
+        <form>
+            <input type="hidden" name="qrcode" value="" />
+        </form>
+        <br />
+        <br />
+        
+        @if (ViewBag.QrCodeImage != null)
+        {
+            <img class="run" src="@ViewBag.QrCodeImage" alt="" style="height:300px;width:300px;margin-left:30px;margin-top:-27px;" />
+        }
+    </div>
+}
+
+

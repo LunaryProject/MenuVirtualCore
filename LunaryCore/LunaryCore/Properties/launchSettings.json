@@ -1,0 +1,31 @@
+﻿{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:51635",
+      "sslPort": 0,
+      "server=.;database=LicenseManager;integrated":"security=True;Encrypt=False\""
+    }
+  },
+  "profiles": {
+    "LunaryCore": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:5201",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "server=.;database=LicenseManager;integrated":"security=True;Encrypt=False\""
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "server=.;database=LicenseManager;integrated":"security=True;Encrypt=False\""
+      }
+    }
+  }
+}

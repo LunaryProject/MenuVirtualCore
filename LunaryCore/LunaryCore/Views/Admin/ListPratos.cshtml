@@ -1,0 +1,90 @@
+﻿@model IPagedList<LunaryCore.Models.Restaurante>
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+     ViewBag.Title = "Pratos";
+}
+@using PagedList.Mvc;
+@using PagedList;
+
+<head>
+    <link href="~/Admin/Crud.css" rel="stylesheet" />
+</head>
+
+
+<body>
+    <h2 class="text-center" style=" background-color:gold;">Pratos</h2>
+    <br />
+    <br />
+
+    <main>
+        <table class="table table-striped thead-dark" style="margin-top:10px;">
+            <thead class="thead-cor">
+                <tr style="font-weight: bold; font-size: 17px;">
+                    <td class="text-center">Id</td>
+                    <td class="text-center">Prato</td>
+                    <td class="text-center">Preço</td>
+                    <td class="text-center">Descrição</td>
+                    <td class="text-center">Preço Promoção</td>
+                    <td class="text-center">Categoria</td>
+                    <br />
+                    <td></td>
+                    <td></td>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr style="font-size:15px;">
+                        <td class="text-center">@item.RESTAUID</td>
+                        <td class="text-center">@item.RESTANOME</td>
+                        <td class="text-center">R$@item.RESTAPRECO.ToString("F")</td>
+                        <td class="text-center">@item.RESTADESCRICAO</td>
+                        @if (@item.RESTAPREPROMOCAO != null)
+                        {
+                            <td class="text-center">
+                                R$ @item.RESTAPREPROMOCAO.ToString("F")
+                            </td>
+                        }
+                        else
+                        {
+                            <td> </td>
+                        }
+                        <td class="text-center">@item.RESTACATEGORIA</td>
+                        <td>
+                            @{
+                                var imgSrc = "";
+                                if (item.imagem != null)
+                                {
+                                    var base64 = Convert.ToBase64String(item.imagem);
+                                    imgSrc = String.Format("data:image/jpg/gif/png;base64,{0}", base64);
+                                    <img class="img" src="@imgSrc" alt="@item.RESTANOME" width="100" height="100" />
+                                }
+                            }
+                        </td>
+
+                        <td>
+                            <a href="/Admin/Editar?id=@item.RESTAUID"><button type="button" class="button-green">Editar</button></a>
+                            <br />
+                            <br />
+                            <a href="/Admin/Excluir?id=@item.RESTAUID"><button type="button" class="button-red">Excluir</button></a>
+
+                        </td>
+                    </tr>
+
+
+                }
+
+            </tbody>
+        </table>
+        <div class="text-center">
+            @Html.(PagedListPager(Model, i => Url.Action("ListPratos", "Admin", new { i, procurar = Request.QueryString["procurar"] }))
+        </div>
+
+    </main>
+
+</body>

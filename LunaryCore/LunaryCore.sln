@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LunaryCore", "LunaryCore\LunaryCore.csproj", "{3F0D4FBB-CE37-4A25-B8EC-D25266D4DFD2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F0D4FBB-CE37-4A25-B8EC-D25266D4DFD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F0D4FBB-CE37-4A25-B8EC-D25266D4DFD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F0D4FBB-CE37-4A25-B8EC-D25266D4DFD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F0D4FBB-CE37-4A25-B8EC-D25266D4DFD2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {56BD18F8-C335-4556-9D04-63626617F756}
+	EndGlobalSection
+EndGlobal

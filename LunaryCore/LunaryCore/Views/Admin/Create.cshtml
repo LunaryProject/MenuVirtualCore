@@ -1,0 +1,103 @@
+﻿@model LunaryCore.Models.Restaurante
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+     ViewBag.Title = "Create";
+}
+
+<head>
+    <link rel="stylesheet" href="~/Admin/PictureInput.css"/>    
+    <script src="~/Script/Admin/InputPicture.js"></script>
+</head>
+
+
+
+<h2>Cadastro de Produto</h2>
+<div>
+
+    <form action="/Admin/Create" enctype="multipart/form-data" method="post">
+
+        <div class="form-group">
+            <label for="nome">Nome Do Prato:</label>
+            <input type="text" class="form-control"
+                   maxlength="100"
+                   id="nome" name="nome"
+                   required />
+        </div>
+        <div class="form-group">
+            <label for="preco">Preço:</label>
+            <input type="text" class="form-control" step="0.010"
+                   id="preco" name="preco"
+                   required />
+        </div>
+        <div class="form-group">
+            <label for="descricao">Descrição:</label>
+            <input type="text" class="form-control"
+                   id="descricao" name="descricao">
+        </div>
+        <div class="form-group">
+            <label for="precopromocao">Preço Promocional:</label>
+            <input type="text" class="form-control" step="0.010"
+                   id="precopromocao" name="precopromocao" value="0" />
+        </div>
+
+        <div class="form-group">
+            <label for="categoria">Categoria:</label>
+            <select id="categoria" name="categoria">
+                @foreach (var item in ViewBag.listacategoria)
+                {
+                    <option>@item.RESTACATEGORIA</option>
+                }
+            </select>
+        </div>
+
+        <div class="form-group" typeof="checkbox">
+
+            <!--  Disponibilidade  -->
+
+            <input type='checkbox' value='true' onchange="this.value=this.checked" checked name="disponibilidade" id="disponibilidade">
+            <label class="form-check-label" for="disponibilidade">
+                Disponivel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </label>
+            <!--  Oferta do Dia  -->
+            <input type='checkbox' value='false' onchange="this.value=this.checked" c name="oferta" id="oferta">
+            <label class="form-check-label" for="oferta">
+                Oferta do Dia
+            </label>
+        </div>
+
+        <div class="form-group">
+            <div>
+                <label for="arquivo">Imagem:</label>
+            </div>
+
+            <label class="picture" for="imagem" tabIndex="0">
+                <span title="Clique para adicionar Imagem" class="imagem"></span>
+            </label>
+            <input type="file" class="form-control" name="imagem" id="imagem">
+        </div>
+
+        <div>
+            <a href="/Admin/Index"><button type="button" class="btn btn-primary">Voltar</button>  </a>
+            <a href="/Admin/Index"><button type="submit" class="btn btn-success">Salvar</button>  </a>
+        </div>
+    </form>
+</div>
+
+
+
+@section scripts{
+
+    <script>
+        window.onload = () => {
+            document.queryCommandIndeterm
+            InputImgCreate()
+        }
+    </script>
+
+
+
+
+}
