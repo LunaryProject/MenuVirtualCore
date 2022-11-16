@@ -7,10 +7,8 @@
 @using (Html.BeginForm("QR", "QrCode", FormMethod.Post))
 {
     <div>
-
-       
         <form>
-            <input type="hidden" name="qrcode" value="" />
+            <input type="hidden" name="qrcode" value="@ViewBag.Url" />
         </form>
         <br />
         <br />
