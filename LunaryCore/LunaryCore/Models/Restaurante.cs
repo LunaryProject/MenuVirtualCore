@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-using System.Xml.Linq;
+using System.ComponentModel;
 
 namespace LunaryCore.Models
 {
@@ -8,38 +8,40 @@ namespace LunaryCore.Models
     public class Restaurante
     {
         [Key]
-        [Column("id")]
-        [Display(Name = "ID")]
+        [Column("RESTAUID ")]
+        [Display(Name = "RESTAUID ")]
         public int RESTAUID { get; set; }
 
-        [Column("Nome")]
-        [Display(Name = "Nome")]
-        public string RESTANOME { get; set; }
+        [Column("RESTANOME")]
+        [Display(Name = "RESTANOME")]
+        public string? RESTANOME { get; set; }
         internal static object Where(Func<object, bool> value)
         {
             throw new NotImplementedException();
         }
 
-        [Column("Preço")]
-        [Display(Name = "Preco")]
+        [Column("RESTAPRECO")]
+        [Display(Name = "RESTAPRECO")]
         public double RESTAPRECO { get; set; }
 
-        [Column("Descrição")]
-        [Display(Name = "Descricao")]
-        public string RESTADESCRICAO { get; set; }
-        [Column("Categoria")]
-        [Display(Name = "Categoria")]
-        public string RESTACATEGORIA { get; set; }
+        [Column("RESTADESCRICAO")]
+        [Display(Name = "RESTADESCRICAO")]
+        public string? RESTADESCRICAO { get; set; }
+        [Column("RESTACATEGORIA")]
+        [Display(Name = "RESTACATEGORIA")]
+        public string? RESTACATEGORIA { get; set; }
+
         [Column("imagem")]
         [Display(Name = "imagem")]
-        public byte[] imagem { get; set; }
+        public byte[]? imagem { get; set; }
 
         [Column("Oferta")]
         [Display(Name = "Oferta")]
         public bool Oferta { get; set; }
 
-        [Column("Promoção")]
-        [Display(Name = "Promocao")]
+        [Column("RESTAPREPROMOCAO")]
+        [Display(Name = "RESTAPREPROMOCAO")]
+        [DefaultValue("0")]
         public double RESTAPREPROMOCAO { get; set; }
 
         [Column("Disponibilidade")]

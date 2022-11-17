@@ -8,8 +8,8 @@ namespace LunaryCore.Models
     public class Categorias
     {
         [Key]
-        [Column("Categoria")]
-        [Display(Name = "Categoria")]
+        [Column("RESTACATEGORIA")]
+        [Display(Name = "RESTACATEGORIA")]
         public string RESTACATEGORIA { get; set; }
     }
 }

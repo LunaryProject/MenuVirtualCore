@@ -10,6 +10,7 @@ builder.Services.AddDbContext<Contexto>(options => options.UseSqlServer
 
 
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -25,6 +26,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Restaurante}/{action=Menu}/{id?}");
+    pattern: "{controller=Admin}/{action=index}/{id?}");
 
 app.Run();

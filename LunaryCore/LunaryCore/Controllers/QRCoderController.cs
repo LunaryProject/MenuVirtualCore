@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using QRCoder;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -11,13 +12,17 @@ namespace MenuLunary.Controllers
     public class QRCoderController : Controller
     {
         // GET: QrCode
-        public IActionResult QR()
+
+        [AllowAnonymous]
+        public ActionResult QR()
         {
             return View();
         }
 
         [HttpPost]
-        public IActionResult QR (string qrcode)
+
+        [AllowAnonymous]
+        public ActionResult QR (string qrcode)
         {
             using (MemoryStream ms = new MemoryStream())
             {
