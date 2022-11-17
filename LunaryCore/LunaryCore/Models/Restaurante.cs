@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
 
 namespace LunaryCore.Models
 {
@@ -13,7 +14,7 @@ namespace LunaryCore.Models
 
         [Column("RESTANOME")]
         [Display(Name = "RESTANOME")]
-        public string RESTANOME { get; set; }
+        public string? RESTANOME { get; set; }
         internal static object Where(Func<object, bool> value)
         {
             throw new NotImplementedException();
@@ -25,13 +26,14 @@ namespace LunaryCore.Models
 
         [Column("RESTADESCRICAO")]
         [Display(Name = "RESTADESCRICAO")]
-        public string RESTADESCRICAO { get; set; }
+        public string? RESTADESCRICAO { get; set; }
         [Column("RESTACATEGORIA")]
         [Display(Name = "RESTACATEGORIA")]
-        public string RESTACATEGORIA { get; set; }
+        public string? RESTACATEGORIA { get; set; }
+
         [Column("imagem")]
         [Display(Name = "imagem")]
-        public byte[] imagem { get; set; }
+        public byte[]? imagem { get; set; }
 
         [Column("Oferta")]
         [Display(Name = "Oferta")]
@@ -39,6 +41,7 @@ namespace LunaryCore.Models
 
         [Column("RESTAPREPROMOCAO")]
         [Display(Name = "RESTAPREPROMOCAO")]
+        [DefaultValue("0")]
         public double RESTAPREPROMOCAO { get; set; }
 
         [Column("Disponibilidade")]
