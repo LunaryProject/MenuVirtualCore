@@ -9,17 +9,17 @@ namespace LunaryCore.Models
     public class Campanhas
     {
         [Key]
-        [Column("ID")]
-        [Display(Name = "ID")]
+        [Column("CAMID")]
+        [Display(Name = "CAMID")]
         public int CAMID { get; set; }
-        [Column("Descrição")]
-        [Display(Name = "Descricao")]
+        [Column("CAMDESCRICAO")]
+        [Display(Name = "CAMDESCRICAO")]
         public string CAMDESCRICAO { get; set; }
-        [Column("Foto")]
-        [Display(Name = "foto")]
+        [Column("CAMFOTO")]
+        [Display(Name = "CAMFOTO")]
         public byte[] CAMFOTO { get; set; }
-        [Column("Preço")]
-        [Display(Name = "Preco")]
+        [Column("CAMPRECO")]
+        [Display(Name = "CAMPRECO")]
         public double CAMPRECO { get; set; }
     }
 }
