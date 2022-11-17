@@ -1,0 +1,82 @@
+﻿* {
+ margin: 0;
+ padding: 0;
+}
+.carrossel {
+ width: 400px;
+ height: 250px;
+ outline: 3px solid brown;
+ margin: 50px auto;
+ box-shadow: 10px 10px 15px rgba(0,0,0,7);
+ overflow: hidden;
+}
+.carrossel ul {
+ display: flex;
+ list-style: none;
+ width: 1200px;
+ height: 250px;
+}
+
+.carrossel il {
+ position: relative;
+ animation: slide 15s infinite ease-out;
+}
+@keyframes slide {
+    0% {
+        left: 0px;
+    }
+
+    8% {
+        left: 0px;
+    }
+
+    13% {
+        left: -400px;
+    }
+
+    21% {
+        left: -400px;
+    }
+
+    29% {
+        left: -800px;
+    }
+
+    37% {
+        left: -800px;
+    }
+
+    45% {
+        left: -1200px;
+    }
+
+    53% {
+        left: -1200px;
+    }
+
+    61% {
+        left: -1600px;
+    }
+
+    69% {
+        left: -1600px;
+    }
+
+    77% {
+        left: 0px;
+    }    
+}
+
+@media screen and (max-width: 435px) {
+    .carrossel{
+        width:350px;
+        
+    }
+}
+
+@media screen and (max-width: 395px) {
+    .carrossel {
+        width: 300px;
+        height:230px
+    }
+}

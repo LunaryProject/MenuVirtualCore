@@ -1,0 +1,83 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+.campanhas {
+    width: 400px;
+    height: 250px;
+    outline: 3px solid brown;
+    margin: 50px auto;
+    box-shadow: 10px 10px 15px rgba(0,0,0,7);
+    overflow: hidden;
+}
+.campanhas ul {
+display: flex;
+list-style: none;
+width: 400px;
+height: 250px;
+}
+.campanhas il {
+        position: relative;
+        animation: slide 25s infinite ease-out;
+}
+
+
+@keyframes slide {
+    0% {
+        left: 0px;
+    }
+
+    10% {
+        left: 0px;
+    }
+
+    20% {
+        left: -400px;
+    }
+
+    30% {
+        left: -400px;
+    }
+
+    40% {
+        left: -800px;
+    }
+
+    50% {
+        left: -800px;
+    }
+
+    60% {
+        left: -1200px;
+    }
+
+    70% {
+        left: -1200px;
+    }
+
+    80% {
+        left: -1600px;
+    }
+
+    90% {
+        left: -1600px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .campanhas {
+        width: 350px;
+        
+    }
+}
+
+@media screen and (max-width: 395px) {
+    .campanhas {
+        width: 300px;
+    }
+}
