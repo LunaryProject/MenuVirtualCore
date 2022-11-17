@@ -14,7 +14,7 @@ namespace MenuLunary.Controllers
         // GET: QrCode
 
         [AllowAnonymous]
-        public ActionResult QR()
+        public ActionResult Qr()
         {
             return View();
         }
@@ -22,7 +22,7 @@ namespace MenuLunary.Controllers
         [HttpPost]
 
         [AllowAnonymous]
-        public ActionResult QR (string qrcode)
+        public ActionResult Qr (string qrcode)
         {
             using (MemoryStream ms = new MemoryStream())
             {
