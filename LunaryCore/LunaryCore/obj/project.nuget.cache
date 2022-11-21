@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Q2fEfvCp3GpV7/W80mx9rw97ZaVW6H4LoiCMWbJiz1hz7oOje58kF0JqGNCTy7S83l9svHYDi5Q4W3g6Q+XB1g==",
+  "dgSpecHash": "6KojXniq0A16i794ZwtTPNM6P5ddQiyULYnqW9NWT9WE8aGqPKR6HJxgDm02c5sqZUsOKn/zqcC4rcRZ7jhslg==",
   "success": true,
   "projectFilePath": "C:\\Users\\gc126\\OneDrive\\Documentos\\GitHub\\MenuVirtualCore\\LunaryCore\\LunaryCore\\LunaryCore.csproj",
   "expectedPackageFiles": [
@@ -43,6 +43,7 @@
     "C:\\Users\\gc126\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\gc126\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\gc126\\.nuget\\packages\\pagedlist\\1.17.0\\pagedlist.1.17.0.nupkg.sha512",
+    "C:\\Users\\gc126\\.nuget\\packages\\pagedlist.core\\1.17.4\\pagedlist.core.1.17.4.nupkg.sha512",
     "C:\\Users\\gc126\\.nuget\\packages\\pagedlist.mvc\\4.5.0\\pagedlist.mvc.4.5.0.nupkg.sha512",
     "C:\\Users\\gc126\\.nuget\\packages\\qrcodernetcore\\1.0.0\\qrcodernetcore.1.0.0.nupkg.sha512",
     "C:\\Users\\gc126\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
