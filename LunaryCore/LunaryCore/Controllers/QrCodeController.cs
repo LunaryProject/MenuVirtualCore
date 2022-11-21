@@ -9,12 +9,12 @@ using HttpPostAttribute = Microsoft.AspNetCore.Mvc.HttpPostAttribute;
 
 namespace MenuLunary.Controllers
 {
-    public class QRCoderController : Controller
+    public class QrCodeController : Controller
     {
         // GET: QrCode
 
         [AllowAnonymous]
-        public ActionResult Qr()
+        public IActionResult Qr()
         {
             return View();
         }
@@ -22,7 +22,7 @@ namespace MenuLunary.Controllers
         [HttpPost]
 
         [AllowAnonymous]
-        public ActionResult Qr (string qrcode)
+        public IActionResult Qr (string qrcode)
         {
             using (MemoryStream ms = new MemoryStream())
             {
