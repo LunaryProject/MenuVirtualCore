@@ -5,16 +5,18 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using Controller = Microsoft.AspNetCore.Mvc.Controller;
 using HttpPostAttribute = Microsoft.AspNetCore.Mvc.HttpPostAttribute;
+using Microsoft.AspNetCore.Http;
+using static System.Net.WebRequestMethods;
 
 
 namespace MenuLunary.Controllers
 {
-    public class QRCoderController : Controller
+    public class QrCodeController : Controller
     {
         // GET: QrCode
 
         [AllowAnonymous]
-        public ActionResult QR()
+        public IActionResult Qr()
         {
             return View();
         }
@@ -22,18 +24,20 @@ namespace MenuLunary.Controllers
         [HttpPost]
 
         [AllowAnonymous]
-        public ActionResult QR (string qrcode)
+        public IActionResult Qr (string qrcode)
         {
             using (MemoryStream ms = new MemoryStream())
             {
-                qrcode = Path.GetPathRoot(qrcode) + "/Restaurante/Menu";
-                ViewBag.Url = Path.GetPathRoot(qrcode) + "/Restaurante/Menu";
+                //qrcode = Path.GetPathRoot(qrcode) + "/Restaurante/Menu";
+                //ViewBag.Url = Path.GetPathRoot(qrcode) + "/Restaurante/Menu";
+                qrcode = Path.GetPathRoot(qrcode) + "http://localhost:5201/Restaurante/Menu";
+                
 
                 QRCodeGenerator QRCodeGenerator = new QRCodeGenerator();
                 QRCodeData QRCodeData = QRCodeGenerator.CreateQrCode(qrcode, QRCodeGenerator.ECCLevel.Q);
                 QRCode QRCode = new QRCode(QRCodeData);
 
-                using (Bitmap Bitmap = QRCode.GetGraphic(10))
+                using (Bitmap Bitmap = QRCode.GetGraphic(20))
                 {
                     Bitmap.Save(ms, ImageFormat.Png);
                     ViewBag.QRCodeImage = "data:image/png;base64," + Convert.ToBase64String(ms.ToArray());
@@ -41,8 +45,5 @@ namespace MenuLunary.Controllers
             }
             return View();
         }
-
     }
-
-    
 }

@@ -7,11 +7,10 @@
 {
     <div>
         <form>
-            <input type="hidden" name="qrcode" value="@ViewBag.Url" />
+            <input type="hidden" name="qrcode" value="" />
         </form>
         <br />
         <br />
-        
         @if (ViewBag.QrCodeImage != null)
         {
             <img class="run" src="@ViewBag.QrCodeImage" alt="" style="height:300px;width:300px;margin-left:30px;margin-top:-27px;" />

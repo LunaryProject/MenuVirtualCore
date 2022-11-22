@@ -1,9 +1,6 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-
+text-align
 @model IEnumerable<LunaryCore.Models.Restaurante>
 
 @*
@@ -65,8 +62,8 @@
             <span id="progress-value"><i class="glyphicon glyphicon-arrow-up"></i></span>
         </div>
         @*<h1 class="titulo">Lunary</h1>*@
-        <div style="text-align: center">
-            <img src="~/Content/Menu/img/Logo_Txt.png" alt="Alternate Text" style="align-content: center;width:250px;height:100px;margin-bottom:25px;margin-top:25px;" />
+        <div style="text-align:center;">
+            <img src="~/css/Menu/img/Logo_Txt.png" alt="logo lunary" style="align-content: center;width:250px;height:100px;margin-bottom:25px;margin-top:25px;"/>
         </div>
 
         <p class="subtitulo">Cardápio</p>
@@ -127,7 +124,7 @@
                             imgSrc = String.Format("data:image/jpg/gif/png;base64,{0}", base64);
 
                             <il>
-                                <img class="img3" src="@imgSrc" alt="" height="250px" width="400px"></img>
+                                <img class="img3" src="@imgSrc" alt="" height="250px" width="390px"></img>
                             </il>
                         }
                     }
@@ -164,7 +161,7 @@
         </div>
         <!-- Fim Rank Mais Curtidos -->
 
-        <p class="barra">Menu</p>
+       
         <!-- Filtro Categorias -->
         <div class="dropdown text-center">
             <select style="text-transform: uppercase;" onchange="FiltroCategorias()" id="FiltroCategorias" class="btn btn-danger dropdown-toggle">
@@ -305,6 +302,7 @@
                             <h3 class="text-center name col-md-12">@item.RESTANOME</h3>
 
                             <!--Btn Coração-->
+                           
                             <div class="heart-btn">
                                 <div class="content">
                                     <form action="" method="post">
@@ -462,4 +460,5 @@
             });
         </script>
     }
+
 </body>

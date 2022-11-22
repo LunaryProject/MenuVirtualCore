@@ -9,8 +9,6 @@ builder.Services.AddDbContext<Contexto>(options => options.UseSqlServer
 ("Data Source=.\\SENAI;Initial Catalog=BancoDeDados;Integrated Security=True;Encrypt=False"));
 
 
-
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
