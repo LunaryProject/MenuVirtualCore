@@ -556,14 +556,10 @@
       "PagedList.Core/1.17.4": {
         "type": "package",
         "compile": {
-          "lib/netcoreapp1.0/PagedList.Core.dll": {
-            "related": ".pdb"
-          }
+          "lib/netcoreapp1.0/PagedList.Core.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp1.0/PagedList.Core.dll": {
-            "related": ".pdb"
-          }
+          "lib/netcoreapp1.0/PagedList.Core.dll": {}
         }
       },
       "PagedList.Mvc/4.5.0": {
