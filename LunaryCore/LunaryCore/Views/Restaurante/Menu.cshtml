@@ -59,7 +59,7 @@ text-align
 
 
         <div id="progress">
-            <span id="progress-value"><i class="glyphicon glyphicon-arrow-up"></i></span>
+            <span id="progress-value">&#x1F815;</span>
         </div>
         @*<h1 class="titulo">Lunary</h1>*@
         <div style="text-align:center;">
@@ -69,7 +69,8 @@ text-align
         <p class="subtitulo">Cardápio</p>
         <!-- Carrossel das Campanhas -->
         <form enctype="multipart/form-data">
-            <div class="campanhas" enctype="multipart/form-data">
+            <div class="campanhas" enctype="multipart/form-data" 
+            >
                 <ul>
                     @foreach (var item in ViewBag.Campanha)
                     {
@@ -380,19 +381,7 @@ text-align
 
                             <h3 class="text-center name col-md-12">@item.RESTANOME</h3>
 
-                            <!--Btn Coração-->
-                            <div class="heart-btn">
-                                <div class="content">
-                                    <form action="" method="post">
-                                        <span class="heart"></span>
-
-                                    </form>
-                                    <div id="@item.RESTAUID-Curtidadiv">
-                                        <span class="number" id="@item.RESTAUID-Curtida">@item.Curtidas</span>
-                                    </div>
-
-                                </div>
-                            </div>
+                           
                             <!--Exibindo Preço/Preço Promocional-->
                             <div>
                                 @if (item.RESTAPREPROMOCAO != 0)

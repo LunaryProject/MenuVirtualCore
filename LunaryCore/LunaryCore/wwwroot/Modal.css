@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-﻿﻿body {
-=======
-﻿body {
->>>>>>> efccc11f31d1fa24c305839adc45247dfa6a46bf
-}
+
 
 .Nome {
     margin-top: 10px;
@@ -23,23 +18,21 @@
 }
 
 .preco {
-    text-align: center;
-    font-family: arial, sans-serif;
-    font-weight: bold;
+   
 }
 
-<<<<<<< HEAD
+
 #dov {
     display: flex;
     justify-content: center;
 }
 
-=======
+
 #dov{
     display:flex;
     justify-content:center;
 }
->>>>>>> efccc11f31d1fa24c305839adc45247dfa6a46bf
+
 .imgModal {
     border-top: 4px solid brown;
     border-bottom: 4px solid brown;
@@ -84,12 +77,10 @@
         height: 265px;
     }
 }
-<<<<<<< HEAD
-=======
 
 
 
 
 
 
->>>>>>> efccc11f31d1fa24c305839adc45247dfa6a46bf
+
