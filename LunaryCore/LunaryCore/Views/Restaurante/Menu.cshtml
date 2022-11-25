@@ -68,28 +68,33 @@ text-align
 
         <p class="subtitulo">Cardápio</p>
         <!-- Carrossel das Campanhas -->
-        <form enctype="multipart/form-data">
-            <div class="campanhas" enctype="multipart/form-data" 
-            >
-                <ul>
+        
+            <div class=" carousel slide carousel-fade mx-auto">
+               
+                  
                     @foreach (var item in ViewBag.Campanha)
                     {
-
+                        
                         var imgSrc = "";
 
                         if (item.CAMFOTO != null)
                         {
                             var base64 = Convert.ToBase64String(item.CAMFOTO);
                             imgSrc = String.Format("data:image/jpg/gif/png;base64,{0}", base64);
-
+                            
                             <il>
-                                <img class="img3" src="@imgSrc" alt="" height="250px" width="400px"></img>
+                                
+                                <img src="@imgSrc" alt="" class="d-block  mx-auto">
+                                
                             </il>
+                            
                         }
+                        
                     }
-                </ul>
-            </div>
-        </form>
+                   
+                    </div>
+                
+           
         <div class="barraVermelha">.</div>
 
         <!-- Rank Mais Curtidos -->
@@ -236,7 +241,9 @@ text-align
                             <div class="heart-btn">
                                 <div class="content">
                                     <form action="" method="post">
-                                        <span onclick="Like(@item.RESTAUID)" class="heart" id="@item.RESTAUID"></span>
+                                        <span onclick="Like(@item.RESTAUID)" class="heart" id="@item.RESTAUID">
+                                            
+                                        </span>
 
                                     </form>
                                     <div id="@item.RESTAUID-Curtidadiv">
