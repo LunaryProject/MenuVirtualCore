@@ -32,7 +32,6 @@ namespace MenuLunary.Controllers
                 //ViewBag.Url = Path.GetPathRoot(qrcode) + "/Restaurante/Menu";
                 qrcode = Path.GetPathRoot(qrcode) + "http://localhost:5201/Restaurante/Menu";
                 
-
                 QRCodeGenerator QRCodeGenerator = new QRCodeGenerator();
                 QRCodeData QRCodeData = QRCodeGenerator.CreateQrCode(qrcode, QRCodeGenerator.ECCLevel.Q);
                 QRCode QRCode = new QRCode(QRCodeData);

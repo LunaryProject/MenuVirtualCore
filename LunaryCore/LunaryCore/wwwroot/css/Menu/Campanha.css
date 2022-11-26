@@ -4,7 +4,7 @@
 }
 
 .campanhas {
-    width: 400px;
+ width:400px;
  height: 250px;
  outline: 3px solid brown;
  margin: 50px auto;
@@ -15,9 +15,9 @@
     .campanhas ul {
         display: flex;
         list-style: none;
-        width: 1200px;
+        width: 400px;
         height: 250px;
-    }
+    }                  
 
     .campanhas il {
         position: relative;

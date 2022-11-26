@@ -4,8 +4,8 @@
 }
 
 .campanhas {
-    width: 400px;
-    height: 250px;
+    width: auto;
+    height: auto;
     outline: 3px solid brown;
     margin: 50px auto;
     box-shadow: 10px 10px 15px rgba(0,0,0,7);
@@ -14,8 +14,8 @@
 .campanhas ul {
 display: flex;
 list-style: none;
-width: 400px;
-height: 250px;
+width: auto;
+height: auto;
 }
 .campanhas il {
         position: relative;
