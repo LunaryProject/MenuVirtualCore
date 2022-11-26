@@ -1,4 +1,4 @@
-﻿@*
+﻿    @*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 text-align
 @model IEnumerable<LunaryCore.Models.Restaurante>
@@ -67,33 +67,29 @@ text-align
         </div>
 
         <p class="subtitulo">Cardápio</p>
+
         <!-- Carrossel das Campanhas -->
-        
-            <div class=" carousel slide carousel-fade mx-auto">
-               
-                  
+        <form enctype="multipart/form-data">
+            <div class="campanhas" enctype="multipart/form-data">
+                <ul>
                     @foreach (var item in ViewBag.Campanha)
                     {
-                        
+
                         var imgSrc = "";
 
                         if (item.CAMFOTO != null)
                         {
                             var base64 = Convert.ToBase64String(item.CAMFOTO);
                             imgSrc = String.Format("data:image/jpg/gif/png;base64,{0}", base64);
-                            
+
                             <il>
-                                
-                                <img src="@imgSrc" alt="" class="d-block  mx-auto">
-                                
+                                <img class="img3" src="@imgSrc" alt="" style="height:250px; width:400px;"></img>
                             </il>
-                            
                         }
-                        
                     }
-                   
-                    </div>
-                
+                </ul>
+            </div>
+        </form>
            
         <div class="barraVermelha">.</div>
 
