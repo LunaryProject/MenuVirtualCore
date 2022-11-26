@@ -6,12 +6,13 @@
     ViewBag.Title = "Home Page";
 }
 
-
 <link href="~/Dashboard.css" rel="stylesheet"/>
 
 
-<body class="dashboard">
-    <div class="div">
+<body class="dashboard text-center">
+
+    
+        <div class="containerbor">
         <div class="container">
             <!-- Primeiro Card -->
             <div class="card">
@@ -56,9 +57,11 @@
                 </div>
             </div>
         </div>
+        </div>
         <br />
         <br />
 
+        <div class="containerbar">
         <div class="container">
             <!-- Segundo Card -->
             @using (Html.BeginForm("Qr", "QrCode", FormMethod.Post, new { id = "QrCoder" }))
@@ -89,7 +92,7 @@
                 <div class="card">
                     <div class="content">
                         <a href="/Campanha/index">
-                            <div class="col-md-9 ">
+                            <div class="col-md-12 ">
                                 <div>
                                     <h2>Campanhas</h2>
                                 </div>
@@ -99,7 +102,10 @@
                 </div>
 
             </div>
-    </div>
+            </div>
+
+
+    
     <br />
     <br />
 

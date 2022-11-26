@@ -15,4 +15,5 @@
     top: 75px; /* centralizar a parte interna do preload (onde fica a animação)*/
     left: 50%;
     transform: translate(-50%, -50%);
+
 }
