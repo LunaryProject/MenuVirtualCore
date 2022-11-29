@@ -24,7 +24,7 @@ body {
 .containerbar {
     position: absolute;
     top: 40%;
-    left: 26.5%;
+    left: 15%;
     transform: translate(-10%, -50%);
 }
 
