@@ -266,7 +266,7 @@ body {
 
 .heart {
     position: absolute;
-    background: url('file:///C:\Users\android\Documents\GitHub\MenuVirtualCore\LunaryCore\LunaryCore\wwwroot\css\Menu\img\HeartAnimation.png');
+    background: url("img/HeartAnimation.png") no-repeat;
    
     background-position: left;
     background-size: 2900%;
