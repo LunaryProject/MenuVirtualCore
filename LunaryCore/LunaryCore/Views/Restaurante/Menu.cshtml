@@ -1,7 +1,8 @@
-﻿    @*
+﻿@model IEnumerable<LunaryCore.Models.Restaurante>    
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 text-align
-@model IEnumerable<LunaryCore.Models.Restaurante>
+
 
 @*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -11,8 +12,9 @@ text-align
 }
 
 <head onload="preloaderTime()">
-    <link href="~/bootstrap-5.2.3-dist/css/"/>
-    <link href="~/bootstrap-5.2.3-dist/js/"/>
+    
+    
+
     <link href="~/css/Menu/Menu.css" rel="stylesheet" />
     <link href="~/css/Menu/Preloader.css" rel="stylesheet" />
     <link href="~/preco.css" rel="stylesheet" />
@@ -28,7 +30,23 @@ text-align
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
     <script src="~/js/Menu/PreloaderTimer.js"></script>
+     <link href="~/css/Menu/Modal.css" rel="stylesheet" />
+    <link href="~/Modal.css" rel="stylesheet" />
+
+
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+    <!-- CSS only -->
+
 </head>
+
 
 
 
@@ -61,7 +79,7 @@ text-align
 
 
         <div id="progress">
-            <span id="progress-value">&#x1F815;</span>
+            <span id="progress-value"><i class="glyphicon glyphicon-arrow-up"></i></span>
         </div>
         @*<h1 class="titulo">Lunary</h1>*@
         <div style="text-align:center;">
@@ -101,7 +119,7 @@ text-align
 
             <box-icon name='bookmark-heart'></box-icon>
 
-            <h3 class="curtir text-center" style="color:brown">Produtos Mais Curtidos</h3>
+            <h3 class="curtir text-center" style="color:brown;">Produtos Mais Curtidos</h3>
 
 
         </div>
@@ -128,7 +146,7 @@ text-align
                             imgSrc = String.Format("data:image/jpg/gif/png;base64,{0}", base64);
 
                             <il>
-                                <img class="img3" src="@imgSrc" alt="" height="250px" width="390px"></img>
+                                <img class="img3" src="@imgSrc" alt="" height="250px" width="400px"></img>
                             </il>
                         }
                     }
@@ -386,6 +404,22 @@ text-align
 
                             <h3 class="text-center name col-md-12">@item.RESTANOME</h3>
 
+
+                            <!--Btn Coração-->
+                           
+                            <div class="heart-btn">
+                                <div class="content">
+                                    <form action="" method="post">
+                                        <span onclick="Like(@item.RESTAUID)" class="heart" id="@item.RESTAUID"></span>
+
+                                    </form>
+                                    <div id="@item.RESTAUID-Curtidadiv">
+                                        <span class="number" id="@item.RESTAUID-Curtida">@item.Curtidas</span>
+                                    </div>
+
+                                </div>
+                            </div>
+
                            
                             <!--Exibindo Preço/Preço Promocional-->
                             <div>
@@ -428,7 +462,8 @@ text-align
     </div>
 
     @section scripts{
-        <script type="text/javascript" src="~/Scripts/bootstrap.js"></script>
+        <script type="text/javascript" src="~/js/Menu/ModalClick.js"></script>
+        
 
         <script>
             const myLazyLoad = new LazyLoad({

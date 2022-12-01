@@ -127,14 +127,13 @@ body {
     font-style: italic;
     font-weight: bold;
     font-size: 20px;
-    font-family: inherit;
+    font-family: arial, sans-serif;
 }
 
 .preco-normal {
     margin-top: 28px;
     color: brown;
     font-style: italic;
-    
     font-size: 13px;
     font-family: arial, sans-serif;
     text-decoration: line-through;
@@ -157,7 +156,6 @@ body {
 }
 
 .de {
-    
     margin-left: 30px;
     padding: 0;
     margin: 0;
@@ -190,7 +188,6 @@ body {
     color: brown;
     margin-top: 15px;
     text-transform: capitalize;
-    font-family:unset;
 }
 
 .pratos {
@@ -242,8 +239,7 @@ body {
     border-left: 4px solid brown;
     border-right: 4px solid brown;
     border-radius: 15px;
-    margin-top:20px;
-    
+    margin-top: 20px;
 }
 
 .img2-indisponivel {
@@ -266,8 +262,7 @@ body {
 
 .heart {
     position: absolute;
-    background: url('file:///C:\Users\android\Documents\GitHub\MenuVirtualCore\LunaryCore\LunaryCore\wwwroot\css\Menu\img\HeartAnimation.png');
-   
+    background: url("img/HeartAnimation.png") no-repeat;
     background-position: left;
     background-size: 2900%;
     height: 90px;
@@ -314,7 +309,6 @@ body {
     100% {
         background-position: right;
     }
-
 }
 
 /* Tema Noturno */
@@ -382,26 +376,26 @@ input {
 */
 
 .dark {
-    background: #151d2a;    
+    background: #151d2a;
 }
 
-.dark .toggle {
-background: #151d2a;
-box-shadow: 3px 3px 3px #0e131b, -3px -3px 3px #1c2739;
-}
+    .dark .toggle {
+        background: #151d2a;
+        box-shadow: 3px 3px 3px #0e131b, -3px -3px 3px #1c2739;
+    }
 
-.dark .toggle .bx-sun {
-    color: #fafafa;
-}
+        .dark .toggle .bx-sun {
+            color: #fafafa;
+        }
 
-.dark .toggle .bxs-moon {
-    color: #151d2a;
-}
+        .dark .toggle .bxs-moon {
+            color: #151d2a;
+        }
 
-.dark .toggle .ball {
-    background: #fafafa;
-    transform: translateX(60px);
-}
+        .dark .toggle .ball {
+            background: #fafafa;
+            transform: translateX(60px);
+        }
 
 
 
@@ -451,7 +445,7 @@ box-shadow: 3px 3px 3px #0e131b, -3px -3px 3px #1c2739;
         font-size: 22px;
     }
 
-    
+
 
     .heart-btn {
         top: 92%;
@@ -509,7 +503,7 @@ box-shadow: 3px 3px 3px #0e131b, -3px -3px 3px #1c2739;
         margin-left: 160px;
     }
 
-    
+
 
     #progress {
         width: 40px;
@@ -633,7 +627,7 @@ box-shadow: 3px 3px 3px #0e131b, -3px -3px 3px #1c2739;
         margin-left: 430px;
     }
 
-    
+
 
     .de {
         top: 99%;
@@ -656,7 +650,6 @@ box-shadow: 3px 3px 3px #0e131b, -3px -3px 3px #1c2739;
 
     .preco-promocao {
         margin-left: 209px;
-        
     }
 
     .de {
@@ -668,484 +661,472 @@ box-shadow: 3px 3px 3px #0e131b, -3px -3px 3px #1c2739;
         top: 109.1%;
         left: 63%;
     }
-
-    
 }
 
-    @media screen and (min-width: 350px) {
-        .preco {
-            margin-left: 200px;
-        }
-
-        .preco-normal {
-            margin-left: 200px;
-        }
-
-        .preco-promocao {
-            margin-left: 225px;
-            
-        }
-
-        .de {
-            top: 98.7%;
-            left: 65%;
-        }
-
-        .por {
-            top: 108.5%;
-            left: 63%;
-        }
+@media screen and (min-width: 350px) {
+    .preco {
+        margin-left: 200px;
     }
 
-    @media screen and (min-width: 360px) {
-        .heart-btn {
-            top: 93%;
-            
-        }
-
-        .preco {
-            margin-left: 210px;
-        }
-
-        .preco-normal {
-            margin-left: 190px;
-        }
-
-        .preco-promocao {
-            margin-left: 225px;
-            
-        }
-
-        .de {
-            top: 98.6%;
-            left: 62%;
-        }
-
-        .por {
-            top: 108.5%;
-            left: 60%;
-        }
-
-        .material-icons {
-            top:200%;
-        }
+    .preco-normal {
+        margin-left: 200px;
     }
 
-    @media screen and (min-width: 375px) {
-
-        .heart-btn {
-            top: 92%;
-           
-        }
-
-        .preco {
-            margin-left: 220px;
-        }
-
-        .preco-normal {
-            margin-left: 165px;
-        }
-
-        .preco-promocao {
-            margin-left: 217px;
-        }
-
-        .de {
-            top: 99%;
-            left: 60%;
-        }
-
-        .por {
-            top: 108.5%;
-            left: 57%;
-        }
+    .preco-promocao {
+        margin-left: 225px;
     }
 
-    @media screen and (min-width: 390px) {
-        .preco {
-            margin-left: 245px;
-        }
-
-        .preco-normal {
-            margin-left: 195px;
-        }
-
-        .preco-promocao {
-            margin-left: 235px;
-        }
-
-        .heart-btn {
-            top: 92%;
-            left: 20%;
-        }
-
-        .de {
-            top: 99.1%;
-            left: 63%;
-        }
-
-        .por {
-            top: 107.4%;
-            left: 60%;
-        }
+    .de {
+        top: 98.7%;
+        left: 65%;
     }
 
-    @media screen and (min-width: 405px) {
-        .preco {
-            margin-left: 255px;
-        }
+    .por {
+        top: 108.5%;
+        left: 63%;
+    }
+}
 
-        .preco-normal {
-            margin-left: 200px;
-        }
-
-        .preco-promocao {
-            margin-left: 245px;
-        }
-
-        .de {
-            top: 98.9%;
-            left: 62%;
-        }
-
-        .por {
-            top: 107.4%;
-            left: 60%;
-        }
+@media screen and (min-width: 360px) {
+    .heart-btn {
+        top: 93%;
     }
 
-    @media screen and (min-width: 415px) {
-        .preco {
-            margin-left: 265px;
-        }
-
-        .preco-normal {
-            margin-left: 210px;
-        }
-
-        .preco-promocao {
-            margin-left: 255px;
-        }
-
-        .de {
-            top: 99%;
-            left: 63%;
-        }
-
-        .por {
-            top: 107.4%;
-            left: 61%;
-        }
-    }
-    /*Parei a formatacao do de e por aqui*/
-    @media screen and (min-width: 430px) {
-        .preco {
-            margin-left: 270px;
-        }
-
-        .preco-normal {
-            margin-left: 270px;
-        }
-
-        .preco-promocao {
-            margin-left: 290px;
-        }
-
-        .de {
-            top: 99.2%;
-            left: 68%;
-        }
-
-        .por {
-            top: 107%;
-            left: 66%;
-        }
-
-        .img {
-            height: 350px;
-            width: 350px;
-        }
-
-        .heart {
-            top: 97%;
-        }
-
-        .content {
-            padding: 7px 10px;
-            display: flex;
-            border: 2px solid #eae2e1;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .numb:before {
-            top: 85%;
-        }
-
-        .heart-btn {
-            top: 91%;
-            left: 19%;
-        }
+    .preco {
+        margin-left: 210px;
     }
 
-
-
-    @media screen and (min-width: 455px) {
-        .preco {
-            margin-left: 320px;
-        }
-
-        .preco-normal {
-            margin-left: 250px;
-        }
-
-        .preco-promocao {
-            margin-left: 290px;
-        }
-
-        .de {
-            top: 99%;
-            left: 66%;
-        }
-
-        .por {
-            top: 106.5%;
-            left: 65%;
-        }
+    .preco-normal {
+        margin-left: 190px;
     }
 
-    @media screen and (min-width: 475px) {
-        .preco {
-            margin-left: 320px;
-        }
-
-        .preco-normal {
-            margin-left: 250px;
-        }
-
-        .preco-promocao {
-            margin-left: 295px;
-        }
-
-        .de {
-            top: 99.1%;
-            left: 66%;
-        }
-
-        .por {
-            top: 106.3%;
-            left: 65%;
-        }
+    .preco-promocao {
+        margin-left: 225px;
     }
 
-    @media screen and (min-width: 490px) {
-        .preco {
-            margin-left: 330px;
-        }
-
-        .preco-normal {
-            margin-left: 250px;
-        }
-
-        .preco-promocao {
-            margin-left: 300px;
-        }
-
-        .de {
-            top: 99.3%;
-            left: 64%;
-        }
-
-        .por {
-            top: 106.5%;
-            left: 62%;
-        }
+    .de {
+        top: 98.6%;
+        left: 62%;
     }
 
-    @media screen and (min-width: 525px) {
-        .preco {
-            margin-left: 370px;
-        }
-
-        .preco-normal {
-            margin-left: 260px;
-        }
-
-        .preco-promocao {
-            margin-left: 315px;
-        }
-
-        .de {
-            top: 99%;
-            left: 64%;
-        }
-
-        .por {
-            top: 106.5%;
-            left: 62%;
-        }
+    .por {
+        top: 108.5%;
+        left: 60%;
     }
 
-    @media screen and (min-width: 540px) {
-        .preco {
-            margin-left: 380px;
-        }
+    .material-icons {
+        top: 200%;
+    }
+}
 
-        .preco-normal {
-            margin-left: 255px;
-        }
+@media screen and (min-width: 375px) {
 
-        .preco-promocao {
-            margin-left: 320px;
-        }
-
-        .de {
-            top: 99%;
-            left: 63%;
-        }
-
-        .por {
-            top: 106.5%;
-            left: 62%;
-        }
+    .heart-btn {
+        top: 92%;
     }
 
-    @media screen and (min-width: 555px) {
-        .preco {
-            margin-left: 390px;
-        }
-
-        .preco-normal {
-            margin-left: 250px;
-        }
-
-        .preco-promocao {
-            margin-left: 322px;
-        }
-
-        .de {
-            top: 99%;
-            left: 63%;
-        }
-
-        .por {
-            top: 106.5%;
-            left: 62%;
-        }
+    .preco {
+        margin-left: 220px;
     }
 
-    @media screen and (min-width: 570px) {
-        .preco {
-            margin-left: 395px;
-        }
-
-        .preco-normal {
-            margin-left: 250px;
-        }
-
-        .preco-promocao {
-            margin-left: 330px;
-        }
-
-        .heart-btn {
-            top: 91%;
-            left: 21%;
-        }
-
-        .de {
-            top: 99%;
-            left: 62%;
-        }
-
-        .por {
-            top: 106.5%;
-            left: 61%;
-        }
+    .preco-normal {
+        margin-left: 165px;
     }
 
-    @media screen and (min-width: 585px) {
-        .preco {
-            margin-left: 405px;
-        }
-
-        .preco-normal {
-            margin-left: 260px;
-        }
-
-        .preco-promocao {
-            margin-left: 340px;
-        }
-
-        .de {
-            top: 99%;
-            left: 62%;
-        }
-
-        .por {
-            top: 106.5%;
-            left: 61%;
-        }
+    .preco-promocao {
+        margin-left: 217px;
     }
 
-    @media screen and (min-width: 615px) {
-        .preco {
-            margin-left: 440px;
-        }
-
-        .preco-normal {
-            margin-left: 410px;
-        }
-
-        .preco-promocao {
-            margin-left: 380px;
-        }
-
-        .de {
-            top: 99%;
-            left: 60%;
-        }
-
-        .por {
-            top: 106.5%;
-            left: 58%;
-        }
+    .de {
+        top: 99%;
+        left: 60%;
     }
 
-    .curtidos {
-        font-weight: bold;
+    .por {
+        top: 108.5%;
+        left: 57%;
+    }
+}
+
+@media screen and (min-width: 390px) {
+    .preco {
+        margin-left: 245px;
     }
 
-    .curtir {
-        font-weight: 900;
+    .preco-normal {
+        margin-left: 195px;
     }
+
+    .preco-promocao {
+        margin-left: 235px;
+    }
+
+    .heart-btn {
+        top: 92%;
+        left: 20%;
+    }
+
+    .de {
+        top: 99.1%;
+        left: 63%;
+    }
+
+    .por {
+        top: 107.4%;
+        left: 60%;
+    }
+}
+
+@media screen and (min-width: 405px) {
+    .preco {
+        margin-left: 255px;
+    }
+
+    .preco-normal {
+        margin-left: 200px;
+    }
+
+    .preco-promocao {
+        margin-left: 245px;
+    }
+
+    .de {
+        top: 98.9%;
+        left: 62%;
+    }
+
+    .por {
+        top: 107.4%;
+        left: 60%;
+    }
+}
+
+@media screen and (min-width: 415px) {
+    .preco {
+        margin-left: 265px;
+    }
+
+    .preco-normal {
+        margin-left: 210px;
+    }
+
+    .preco-promocao {
+        margin-left: 255px;
+    }
+
+    .de {
+        top: 99%;
+        left: 63%;
+    }
+
+    .por {
+        top: 107.4%;
+        left: 61%;
+    }
+}
+/*Parei a formatacao do de e por aqui*/
+@media screen and (min-width: 430px) {
+    .preco {
+        margin-left: 270px;
+    }
+
+    .preco-normal {
+        margin-left: 270px;
+    }
+
+    .preco-promocao {
+        margin-left: 290px;
+    }
+
+    .de {
+        top: 99.2%;
+        left: 68%;
+    }
+
+    .por {
+        top: 107%;
+        left: 66%;
+    }
+
+    .img {
+        height: 350px;
+        width: 350px;
+    }
+
+    .heart {
+        top: 97%;
+    }
+
+    .content {
+        padding: 7px 10px;
+        display: flex;
+        border: 2px solid #eae2e1;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .numb:before {
+        top: 85%;
+    }
+
+    .heart-btn {
+        top: 91%;
+        left: 19%;
+    }
+}
+
+
+
+@media screen and (min-width: 455px) {
+    .preco {
+        margin-left: 320px;
+    }
+
+    .preco-normal {
+        margin-left: 250px;
+    }
+
+    .preco-promocao {
+        margin-left: 290px;
+    }
+
+    .de {
+        top: 99%;
+        left: 66%;
+    }
+
+    .por {
+        top: 106.5%;
+        left: 65%;
+    }
+}
+
+@media screen and (min-width: 475px) {
+    .preco {
+        margin-left: 320px;
+    }
+
+    .preco-normal {
+        margin-left: 250px;
+    }
+
+    .preco-promocao {
+        margin-left: 295px;
+    }
+
+    .de {
+        top: 99.1%;
+        left: 66%;
+    }
+
+    .por {
+        top: 106.3%;
+        left: 65%;
+    }
+}
+
+@media screen and (min-width: 490px) {
+    .preco {
+        margin-left: 330px;
+    }
+
+    .preco-normal {
+        margin-left: 250px;
+    }
+
+    .preco-promocao {
+        margin-left: 300px;
+    }
+
+    .de {
+        top: 99.3%;
+        left: 64%;
+    }
+
+    .por {
+        top: 106.5%;
+        left: 62%;
+    }
+}
+
+@media screen and (min-width: 525px) {
+    .preco {
+        margin-left: 370px;
+    }
+
+    .preco-normal {
+        margin-left: 260px;
+    }
+
+    .preco-promocao {
+        margin-left: 315px;
+    }
+
+    .de {
+        top: 99%;
+        left: 64%;
+    }
+
+    .por {
+        top: 106.5%;
+        left: 62%;
+    }
+}
+
+@media screen and (min-width: 540px) {
+    .preco {
+        margin-left: 380px;
+    }
+
+    .preco-normal {
+        margin-left: 255px;
+    }
+
+    .preco-promocao {
+        margin-left: 320px;
+    }
+
+    .de {
+        top: 99%;
+        left: 63%;
+    }
+
+    .por {
+        top: 106.5%;
+        left: 62%;
+    }
+}
+
+@media screen and (min-width: 555px) {
+    .preco {
+        margin-left: 390px;
+    }
+
+    .preco-normal {
+        margin-left: 250px;
+    }
+
+    .preco-promocao {
+        margin-left: 322px;
+    }
+
+    .de {
+        top: 99%;
+        left: 63%;
+    }
+
+    .por {
+        top: 106.5%;
+        left: 62%;
+    }
+}
+
+@media screen and (min-width: 570px) {
+    .preco {
+        margin-left: 395px;
+    }
+
+    .preco-normal {
+        margin-left: 250px;
+    }
+
+    .preco-promocao {
+        margin-left: 330px;
+    }
+
+    .heart-btn {
+        top: 91%;
+        left: 21%;
+    }
+
+    .de {
+        top: 99%;
+        left: 62%;
+    }
+
+    .por {
+        top: 106.5%;
+        left: 61%;
+    }
+}
+
+@media screen and (min-width: 585px) {
+    .preco {
+        margin-left: 405px;
+    }
+
+    .preco-normal {
+        margin-left: 260px;
+    }
+
+    .preco-promocao {
+        margin-left: 340px;
+    }
+
+    .de {
+        top: 99%;
+        left: 62%;
+    }
+
+    .por {
+        top: 106.5%;
+        left: 61%;
+    }
+}
+
+@media screen and (min-width: 615px) {
+    .preco {
+        margin-left: 440px;
+    }
+
+    .preco-normal {
+        margin-left: 410px;
+    }
+
+    .preco-promocao {
+        margin-left: 380px;
+    }
+
+    .de {
+        top: 99%;
+        left: 60%;
+    }
+
+    .por {
+        top: 106.5%;
+        left: 58%;
+    }
+}
+
+.curtidos {
+    font-weight: bold;
+}
+
+.curtir {
+    font-weight: 900;
+}
 
 
 @media screen and (min-width: 768px) {
     .preco-normal {
         margin-left: 223px;
-        
     }
 
     .preco-promocao {
         margin-left: 380px;
-        
     }
 
     .de {
         top: 98.4%;
         left: 56%;
-        
     }
 
     .por {
         top: 106.4%;
         left: 54%;
-        
     }
 }
 
-.minicoracao{
-    position:relative;
+.minicoracao {
+    position: relative;
 }
-
-
