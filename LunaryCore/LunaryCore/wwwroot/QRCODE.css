@@ -1,5 +1,4 @@
 ﻿body {
-    display: flex;
     justify-content: center;
     align-items: center;
     
@@ -12,7 +11,11 @@
     max-width: 410px;
     border-radius: 7px;
     padding: 16px 25px;
-    transition: height 0.5s ease ;
+    transition: height 0.5s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .container .qr-code {
