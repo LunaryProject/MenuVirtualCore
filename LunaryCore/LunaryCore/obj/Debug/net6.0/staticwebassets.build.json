@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Cn4EVTAm6a67IxiujiUApq3rQQsZoLP94muVMj3XRAk=",
+  "Hash": "HxAr3L/qLnGhXMNW5HVmzlzEM6mEszMG6znvdr+l3UQ=",
   "Source": "LunaryCore",
   "BasePath": "_content/LunaryCore",
   "Mode": "Default",
@@ -1477,6 +1477,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Menu\\ToggleTema.js"
+    },
+    {
+      "Identity": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\LunaryCore\\LunaryCore\\wwwroot\\js\\mobile-navbar.js",
+      "SourceId": "LunaryCore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\LunaryCore\\LunaryCore\\wwwroot\\",
+      "BasePath": "_content/LunaryCore",
+      "RelativePath": "js/mobile-navbar.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\mobile-navbar.js"
     },
     {
       "Identity": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\LunaryCore\\LunaryCore\\wwwroot\\js\\modernizr-2.8.3.js",
