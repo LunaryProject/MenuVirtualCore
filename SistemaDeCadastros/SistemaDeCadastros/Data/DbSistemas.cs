@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SistemaDeCadastros.Models;
+using SistemaDeCadastros.Data.Map;
 
 namespace SistemaDeCadastros.Data
 {
@@ -9,6 +10,12 @@ namespace SistemaDeCadastros.Data
         {
         }
 
-        public DbSet<UsuarioModel> Usuarios { get; set; }
+        public DbSet<PratosModel> Pratos { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new PratosMap());
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

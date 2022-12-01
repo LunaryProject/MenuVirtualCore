@@ -1,6 +1,6 @@
 ﻿namespace SistemaDeCadastros.Models
 {
-    public class UsuarioModel
+    public class PratosModel
     {
         public int RESTAUID { get; set; }
         public string? RESTANOME { get; set; }
@@ -13,10 +13,8 @@
         public double RESTAPRECO { get; set; }
         public string? RESTADESCRICAO { get; set; }
         public string? RESTACATEGORIA { get; set; }
-        public byte[]? imagem { get; set; }
-        public bool Oferta { get; set; }
         public double RESTAPREPROMOCAO { get; set; }
-        public bool Disponibilidade { get; set; }
-        public int Curtidas { get; set; }
+        
+        
     }
 }
