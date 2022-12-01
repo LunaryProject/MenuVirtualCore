@@ -1,3 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+using SistemaDeCadastros.Data;
+using SistemaDeCadastros.Repositorios.interfaces;
+using SistemaDeCadastros.Repositorios;
+
 namespace SistemaDeCadastros
 {
     public class Program
@@ -12,6 +17,13 @@ namespace SistemaDeCadastros
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddEntityFrameworkSqlServer()
+                .AddDbContext<DbSistemas>(
+                options => options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase"))
+                );
+
+            builder.Services.AddScoped<IPratosRepositorio, Pratos>();
 
             var app = builder.Build();
 
