@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Uilson\\Documents\\GitHub\\MenuVirtualCore\\LunaryCore\\LunaryCore\\LunaryCore.csproj": {}
+    "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\LunaryCore\\LunaryCore\\LunaryCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Uilson\\Documents\\GitHub\\MenuVirtualCore\\LunaryCore\\LunaryCore\\LunaryCore.csproj": {
+    "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\LunaryCore\\LunaryCore\\LunaryCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Uilson\\Documents\\GitHub\\MenuVirtualCore\\LunaryCore\\LunaryCore\\LunaryCore.csproj",
+        "projectUniqueName": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\LunaryCore\\LunaryCore\\LunaryCore.csproj",
         "projectName": "LunaryCore",
-        "projectPath": "C:\\Users\\Uilson\\Documents\\GitHub\\MenuVirtualCore\\LunaryCore\\LunaryCore\\LunaryCore.csproj",
-        "packagesPath": "C:\\Users\\Uilson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Uilson\\Documents\\GitHub\\MenuVirtualCore\\LunaryCore\\LunaryCore\\obj\\",
+        "projectPath": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\LunaryCore\\LunaryCore\\LunaryCore.csproj",
+        "packagesPath": "C:\\Users\\android\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\LunaryCore\\LunaryCore\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Uilson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\android\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -81,8 +84,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -94,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

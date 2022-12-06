@@ -314,6 +314,7 @@ body {
 /* Tema Noturno */
 
 
+
 .toggle {
     cursor: pointer;
     position: relative;
@@ -323,6 +324,7 @@ body {
     height: 60px;
     border-radius: 50px;
     transition: .2s;
+    margin-top:50px;
 }
 
     .toggle i {
