@@ -699,7 +699,7 @@ input {
     }
 
     .preco-normal {
-        margin-left: 190px;
+        margin-left: 230px;
     }
 
     .preco-promocao {
@@ -732,7 +732,7 @@ input {
     }
 
     .preco-normal {
-        margin-left: 165px;
+        margin-left: 230px;
     }
 
     .preco-promocao {
@@ -756,7 +756,7 @@ input {
     }
 
     .preco-normal {
-        margin-left: 195px;
+        margin-left: 260px;
     }
 
     .preco-promocao {
@@ -785,7 +785,7 @@ input {
     }
 
     .preco-normal {
-        margin-left: 200px;
+        margin-left: 270px;
     }
 
     .preco-promocao {
@@ -981,7 +981,7 @@ input {
     }
 
     .preco-normal {
-        margin-left: 255px;
+        margin-left: 360px;
     }
 
     .preco-promocao {
@@ -1111,7 +1111,7 @@ input {
 
 @media screen and (min-width: 768px) {
     .preco-normal {
-        margin-left: 223px;
+        margin-left: 450px;
     }
 
     .preco-promocao {

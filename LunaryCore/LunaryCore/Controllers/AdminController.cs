@@ -22,19 +22,19 @@ namespace MenuLunary.Controllers
         }
         // GET: Admin
 
-        [AllowAnonymous]
+        
         public ActionResult Index()
         {
             return View();
         }
-        [AllowAnonymous]
+        
         public ActionResult ListPratos(int? i)
         {
             var lista = bd.Restaurante.ToList().ToPagedList(i ?? 1, 15);
             return View(lista);
 
         }
-        [AllowAnonymous]
+        
         public ActionResult Create()
         {
             ViewBag.listacategoria = bd.Categorias.ToList();
@@ -43,7 +43,6 @@ namespace MenuLunary.Controllers
         }
 
         [HttpPost]
-        [AllowAnonymous]
         public ActionResult Create(int? id, string nome, float preco, string descricao, float precopromocao, string categoria, IFormFile imagem, string oferta, string disponibilidade)
         {
             Restaurante novoRestaurante = new Restaurante();
@@ -90,8 +89,6 @@ namespace MenuLunary.Controllers
         }
 
         [HttpGet]
-
-        [AllowAnonymous]
         public ActionResult Editar(int? id)
         {
             if (id != null)
@@ -113,7 +110,6 @@ namespace MenuLunary.Controllers
         }
 
         [HttpPost]
-        [AllowAnonymous]
         public ActionResult Editar(int? id, string nome, float preco, string descricao, float precopromocao, string categoria, IFormFile imagem, string oferta, string disponibilidade)
         {
             Restaurante atualizarrestaurante = bd.Restaurante.ToList().Where(x => x.RESTAUID == id).First();
@@ -160,7 +156,6 @@ namespace MenuLunary.Controllers
         }
 
         [HttpGet]
-        [AllowAnonymous]
         public ActionResult Excluir(int? id)
         {
             if (id != null)
@@ -179,7 +174,6 @@ namespace MenuLunary.Controllers
         }
 
         [HttpPost]
-        [AllowAnonymous]
         public ActionResult ExcluirConfirmar(int? id)
         {
             if (id != null)
@@ -200,23 +194,18 @@ namespace MenuLunary.Controllers
             return RedirectToAction("ListPratos");
         }
 
-        [AllowAnonymous]
-
         public ActionResult ProdutosCurtidos()
         {
             ViewBag.Rank = bd.Restaurante.ToList().OrderByDescending(x => ((uint?)x.Curtidas)).ToList();
             return View();
         }
 
-        [AllowAnonymous]
         public ActionResult Qr()
         {
             return View();
         }
 
         [HttpPost]
-
-        [AllowAnonymous]
         public ActionResult Qr(string qrcode)
         {
             using (MemoryStream ms = new MemoryStream())

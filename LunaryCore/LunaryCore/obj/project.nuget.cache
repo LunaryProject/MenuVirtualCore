@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "kYd9DSivk4uSavxK3ahNugutz44CkEPCRqvjHj/mDr4B4uMuciEyiwxRtxwUns5yL9KK/v7YjSb9Oe2trOzlpA==",
+  "dgSpecHash": "hPWwN/CE/GG8eZvs+nRn5xWmn6zKo7l2NR33pWe9o9qzClxHwWagj6yvYUoquCSaftfXzimnPvFenuyPm+t3ZQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\LunaryCore\\LunaryCore\\LunaryCore.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\android\\.nuget\\packages\\acr.userdialogs\\8.0.1\\acr.userdialogs.8.0.1.nupkg.sha512",
     "C:\\Users\\android\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\android\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\android\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
