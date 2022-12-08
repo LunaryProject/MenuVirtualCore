@@ -324,7 +324,7 @@ body {
     height: 60px;
     border-radius: 50px;
     transition: .2s;
-    margin-top:50px;
+    margin-top:10px;
 }
 
     .toggle i {
@@ -968,6 +968,7 @@ input {
         top: 99%;
         left: 64%;
     }
+
 
     .por {
         top: 106.5%;
