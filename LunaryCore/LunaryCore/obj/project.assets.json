@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Acr.UserDialogs/8.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Acr.UserDialogs.dll": {}
+        }
+      },
       "Azure.Core/1.24.0": {
         "type": "package",
         "dependencies": {
@@ -1000,6 +1009,26 @@
     }
   },
   "libraries": {
+    "Acr.UserDialogs/8.0.1": {
+      "sha512": "17RkOZQf/j+osXl7UURPbDpHNL0wGRYYpi+P5Sl3FJOIwT9c0jPLgSPn48NFVdmDjKIckTXiFgc+u0LNNhhLjw==",
+      "type": "package",
+      "path": "acr.userdialogs/8.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "acr.userdialogs.8.0.1.nupkg.sha512",
+        "acr.userdialogs.nuspec",
+        "lib/net6.0-android31.0/Acr.UserDialogs.dll",
+        "lib/net6.0-android31.0/Acr.UserDialogs.xml",
+        "lib/net6.0-ios15.4/Acr.UserDialogs.dll",
+        "lib/net6.0-ios15.4/Acr.UserDialogs.xml",
+        "lib/net6.0-maccatalyst15.4/Acr.UserDialogs.dll",
+        "lib/net6.0-maccatalyst15.4/Acr.UserDialogs.xml",
+        "lib/net6.0/Acr.UserDialogs.dll",
+        "lib/net6.0/Acr.UserDialogs.xml",
+        "readme.txt"
+      ]
+    },
     "Azure.Core/1.24.0": {
       "sha512": "+/qI1j2oU1S4/nvxb2k/wDsol00iGf1AyJX5g3epV7eOpQEP/2xcgh/cxgKMeFgn3U2fmgSiBnQZdkV+l5y0Uw==",
       "type": "package",
@@ -3490,6 +3519,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Acr.UserDialogs >= 8.0.1",
       "Microsoft.Data.SqlClient >= 5.0.1",
       "Microsoft.EntityFrameworkCore >= 7.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.0",
@@ -3547,6 +3577,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Acr.UserDialogs": {
+            "target": "Package",
+            "version": "[8.0.1, )"
+          },
           "Microsoft.Data.SqlClient": {
             "target": "Package",
             "version": "[5.0.1, )"
@@ -3609,6 +3643,12 @@
     }
   },
   "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\LunaryCore\\LunaryCore\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    },
     {
       "code": "NU1701",
       "level": "Warning",

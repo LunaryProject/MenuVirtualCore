@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "sShFjYMOkcVzGJ1bD9GmrxvhrOy7NsgUCQ7d9Ey4vfbgI/vB0EHc6NutJikpkrVNuK38TB4/txFXtOpxZdbo7Q==",
+  "dgSpecHash": "wn3Y0CFCG3aAtDxvJ2oAoP7dnk04Wj+1BJF4I+PdA0kMKFbIgujQAnyiCzMVYg+YJRBu6oHjzg6eRdyRcJp4Zg==",
   "success": true,
   "projectFilePath": "C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\LunaryCore\\LunaryCore\\LunaryCore.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\android\\.nuget\\packages\\acr.userdialogs\\8.0.1\\acr.userdialogs.8.0.1.nupkg.sha512",
     "C:\\Users\\android\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\android\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\android\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -79,6 +80,12 @@
     "C:\\Users\\android\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\android\\Documents\\GitHub\\MenuVirtualCore\\LunaryCore\\LunaryCore\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    },
     {
       "code": "NU1701",
       "level": "Warning",

@@ -9,11 +9,11 @@ text-align
 *@
 @{
     ViewBag.Title = "Pratos";
+    
 }
 
 <head onload="preloaderTime()">
-    
-    
+   
 
     <link href="~/css/Menu/Menu.css" rel="stylesheet" />
     <link href="~/css/Menu/Preloader.css" rel="stylesheet" />
@@ -32,19 +32,7 @@ text-align
     <script src="~/js/Menu/PreloaderTimer.js"></script>
      <link href="~/css/Menu/Modal.css" rel="stylesheet" />
     <link href="~/Modal.css" rel="stylesheet" />
-
-
-     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-
-    <!-- CSS only -->
-
+    
 </head>
 
 
@@ -69,12 +57,14 @@ text-align
     <div id="Conteudo">
 
         <!-- Toggle Tema -->
+        
         <input type="checkbox" id="toggle">
         <label onclick="Toggle()" class="toggle" for="toggle">
             <i class="bx bxs-sun" id="sun"></i> <!--ícone do sol-->
             <i class="bx bx-moon" id="moon"></i> <!--ícone da lua-->
             <span class="ball"></span> <!--ícone da bola que troca o modo da tela-->
         </label>
+       
         <!-- Fim Toggle Tema -->
 
 
@@ -83,7 +73,7 @@ text-align
         </div>
         @*<h1 class="titulo">Lunary</h1>*@
         <div style="text-align:center;">
-            <img src="~/css/Menu/img/Logo_Txt.png" alt="logo lunary" style="align-content: center;width:250px;height:100px;margin-bottom:25px;margin-top:25px;"/>
+            <img src="~/css/Menu/img/unnamed-removebg-preview (1).png" alt="logo lunary" style="align-content: center;width:250px;height:100px;margin-bottom:25px;margin-top:25px;"/>
         </div>
 
         <p class="subtitulo">Cardápio</p>
@@ -462,7 +452,11 @@ text-align
     </div>
 
     @section scripts{
-        <script type="text/javascript" src="~/js/Menu/ModalClick.js"></script>
+        <script type="text/javascript" src="/js/Menu/ModalClick.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+        <script src="/bootstrap-3.4.1-dist/js/npm.js"></script>
         
 
         <script>
