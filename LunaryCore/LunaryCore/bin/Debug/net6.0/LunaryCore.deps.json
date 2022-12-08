@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "LunaryCore/1.0.0": {
         "dependencies": {
+          "Acr.UserDialogs": "8.0.1",
           "Microsoft.Data.SqlClient": "5.0.1",
           "Microsoft.EntityFrameworkCore": "7.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
@@ -19,6 +20,14 @@
         },
         "runtime": {
           "LunaryCore.dll": {}
+        }
+      },
+      "Acr.UserDialogs/8.0.1": {
+        "runtime": {
+          "lib/net6.0/Acr.UserDialogs.dll": {
+            "assemblyVersion": "8.0.1.2",
+            "fileVersion": "8.0.1.2"
+          }
         }
       },
       "Azure.Core/1.24.0": {
@@ -749,6 +758,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Acr.UserDialogs/8.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-17RkOZQf/j+osXl7UURPbDpHNL0wGRYYpi+P5Sl3FJOIwT9c0jPLgSPn48NFVdmDjKIckTXiFgc+u0LNNhhLjw==",
+      "path": "acr.userdialogs/8.0.1",
+      "hashPath": "acr.userdialogs.8.0.1.nupkg.sha512"
     },
     "Azure.Core/1.24.0": {
       "type": "package",

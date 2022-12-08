@@ -12,7 +12,7 @@ using HttpPostAttribute = Microsoft.AspNetCore.Mvc.HttpPostAttribute;
 
 namespace MenuLunary.Controllers
 {
-    [Authorize]
+    
     public class AdminController : Controller
     {
         private readonly Contexto bd;
