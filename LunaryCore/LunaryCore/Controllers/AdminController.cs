@@ -42,10 +42,12 @@ namespace MenuLunary.Controllers
 
         }
 
-        [HttpPost]
         [AllowAnonymous]
+        [HttpPost]
         public ActionResult Create(int? id, string nome, float preco, string descricao, float precopromocao, string categoria, IFormFile imagem, string oferta, string disponibilidade)
         {
+
+            
             Restaurante novoRestaurante = new Restaurante();
             novoRestaurante.RESTANOME = nome;
             novoRestaurante.RESTAPRECO = preco;
