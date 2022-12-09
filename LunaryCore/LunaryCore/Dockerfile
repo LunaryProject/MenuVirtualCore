@@ -13,10 +13,13 @@ WORKDIR "/src/LunaryCore"
 RUN dotnet build "LunaryCore.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "LunaryCore.csproj" -c Release -o /app/publish
+RUN dotnet publish "LunaryCore.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "LunaryCore.dll"]
+
 RUN useradd -m lunary
 USER lunary
 CMD DOTNETCORE_URLS="http://*:$PORT" dotnet LunaryCore.dll
