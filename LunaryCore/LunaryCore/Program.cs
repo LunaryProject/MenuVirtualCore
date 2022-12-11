@@ -29,3 +29,5 @@ app.MapControllerRoute(
     pattern: "{controller=Admin}/{action=index}/{id?}");
 
 app.Run();
+
+

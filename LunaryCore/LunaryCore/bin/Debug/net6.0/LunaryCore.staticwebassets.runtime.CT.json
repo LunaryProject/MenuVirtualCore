@@ -1,7 +1,7 @@
 {
   "ContentRoots": [
-    "C:\\Users\\gc126\\OneDrive\\Documentos\\GitHub\\MenuVirtualCore\\LunaryCore\\LunaryCore\\wwwroot\\",
-    "C:\\Users\\gc126\\OneDrive\\Documentos\\GitHub\\MenuVirtualCore\\LunaryCore\\LunaryCore\\obj\\Debug\\net6.0\\scopedcss\\bundle\\"
+    "/src/LunaryCore/wwwroot/",
+    "/src/LunaryCore/obj/Debug/net6.0/scopedcss/bundle/"
   ],
   "Root": {
     "Children": {

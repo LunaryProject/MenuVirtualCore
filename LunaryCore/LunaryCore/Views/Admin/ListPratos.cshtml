@@ -1,4 +1,4 @@
-﻿@model IPagedList<LunaryCore.Models.Restaurante>
+﻿@model IEnumerable<LunaryCore.Models.Restaurante>
 
 @*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -86,9 +86,7 @@
 
             </tbody>
         </table>
-        <div class="text-center">
-            @Html.(PagedListPager(Model, i => Url.Action("ListPratos", "Admin", new { i, procurar = Request.QueryString["procurar"] }))
-        </div>
+       
 
     </main>
 

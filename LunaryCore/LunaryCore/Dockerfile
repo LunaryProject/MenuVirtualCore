@@ -23,3 +23,5 @@ ENTRYPOINT ["dotnet", "LunaryCore.dll"]
 RUN useradd -m lunary
 USER lunary
 CMD DOTNETCORE_URLS="http://*:$PORT" dotnet LunaryCore.dll
+
+

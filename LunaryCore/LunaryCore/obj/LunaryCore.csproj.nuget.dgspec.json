@@ -78,6 +78,10 @@
               "target": "Package",
               "version": "[1.17.4, )"
             },
+            "PagedList.Core.Mvc": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "PagedList.Mvc": {
               "target": "Package",
               "version": "[4.5.0, )"
@@ -85,6 +89,10 @@
             "QRCoderNetCore": {
               "target": "Package",
               "version": "[1.0.0, )"
+            },
+            "X.PagedList.Mvc.Core": {
+              "target": "Package",
+              "version": "[8.4.3, )"
             }
           },
           "imports": [

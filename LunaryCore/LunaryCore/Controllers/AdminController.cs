@@ -28,9 +28,9 @@ namespace MenuLunary.Controllers
             return View();
         }
         [AllowAnonymous]
-        public ActionResult ListPratos(int? i)
+        public ActionResult ListPratos()
         {
-            var lista = bd.Restaurante.ToList().ToPagedList(i ?? 1, 15);
+            var lista = bd.Restaurante.ToList();
             return View(lista);
 
         }
