@@ -2,7 +2,6 @@
 
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 WORKDIR /app
-EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
@@ -22,4 +21,7 @@ ENTRYPOINT ["dotnet", "LunaryCore.dll"]
 
 RUN useradd -m lunary
 USER lunary
-CMD DOTNETCORE_URLS="http://*:$PORT" dotnet LunaryCore.dll
+
+CMD ASPNETCORE_URLS=http://*:$PORT dotnet LunaryCore.dll
+
+
