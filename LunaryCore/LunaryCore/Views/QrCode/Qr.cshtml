@@ -5,16 +5,11 @@
     ViewBag.Title = "Qr";
 }
 
-
-   
-    
-    
-
 @using (Html.BeginForm("Qr", "QrCode", FormMethod.Post))
 {
     <div>
         <form>
-            <input type="hidden" name="qrcode" value="http://localhost:5201/Restaurante/Menu" />
+            <input type="hidden" name="qrcode" value="https://restaurantelunary.herokuapp.com/Restaurante/Menu" />
         </form>
         <br />
         <br />
