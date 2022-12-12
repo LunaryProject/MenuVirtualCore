@@ -20,9 +20,7 @@ WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "LunaryCore.dll"]
 
-RUN useradd -m lunary
-USER lunary
+RUN useradd -m myappuser
+USER myappuser
 
-CMD ASPNETCORE_URLS=http://*:$PORT dotnet LunaryCore.dll
-
-
+CMD ASPNETCORE_URLS="http://*:$PORT" dotnet LunaryCore.dll
