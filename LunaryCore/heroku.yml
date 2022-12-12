@@ -1,4 +1,4 @@
 build:
   docker:
     web: Dockerfile
-  web: bundle exec puma -C config/puma.rb
+    worker: worker/Dockerfile
