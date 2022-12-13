@@ -4,6 +4,8 @@ FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 WORKDIR /app
 EXPOSE 80
 
+RUN apt-get update && apt-get install -y libgdiplus
+
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["LunaryCore/LunaryCore.csproj", "LunaryCore/"]

@@ -350,3 +350,4 @@ C:\Users\gc126\OneDrive\Documentos\GitHub\MenuVirtualCore\LunaryCore\LunaryCore\
 C:\Users\gc126\OneDrive\Documentos\GitHub\MenuVirtualCore\LunaryCore\LunaryCore\bin\Debug\net6.0\X.PagedList.dll
 C:\Users\gc126\OneDrive\Documentos\GitHub\MenuVirtualCore\LunaryCore\LunaryCore\bin\Debug\net6.0\X.PagedList.Mvc.Core.dll
 C:\Users\gc126\OneDrive\Documentos\GitHub\MenuVirtualCore\LunaryCore\LunaryCore\obj\Debug\net6.0\LunaryCore.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\gc126\OneDrive\Documentos\GitHub\MenuVirtualCore\LunaryCore\LunaryCore\bin\Debug\net6.0\runtimeconfig.template.json

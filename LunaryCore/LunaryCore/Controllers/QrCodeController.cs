@@ -30,7 +30,7 @@ namespace MenuLunary.Controllers
             {
                 //qrcode = Path.GetPathRoot(qrcode) + "/Restaurante/Menu";
                 //ViewBag.Url = Path.GetPathRoot(qrcode) + "/Restaurante/Menu";
-                qrcode = Path.GetPathRoot(qrcode) + "https://restaurantelunary.herokuapp.com/Restaurante/Menu";
+                qrcode = Path.GetPathRoot(qrcode) + "https://lunaryrestaurante.herokuapp.com/Restaurante/Menu";
 
                 QRCodeGenerator QRCodeGenerator = new QRCodeGenerator();
                 QRCodeData QRCodeData = QRCodeGenerator.CreateQrCode(qrcode, QRCodeGenerator.ECCLevel.Q);
