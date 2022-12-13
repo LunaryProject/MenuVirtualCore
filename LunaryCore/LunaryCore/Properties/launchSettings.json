@@ -30,7 +30,7 @@
       "commandName": "Docker",
       "launchBrowser": true,
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
-      "publishAllPorts": false
+      "publishAllPorts": true
     }
   }
 }

@@ -1,15 +1,5 @@
 {
   "dependencies": {
-    "bootstrap": "^5.2.3",
-    "dialogflow": "^1.2.0",
-    "serve": "^14.1.2",
-    "uuid": "^9.0.0"
-  },
-  "engines": {
-    "node": "18.12.1",
-    "npm": "8.19.2"
-  },
-  "scripts": {
-    "start": "node index.js"
+    "bootstrap": "^5.2.3"
   }
 }
