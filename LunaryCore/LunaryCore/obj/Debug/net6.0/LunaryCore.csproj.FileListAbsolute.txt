@@ -344,3 +344,4 @@ C:\Users\Uilson\Documents\GitHub\MenuVirtualCore\LunaryCore\LunaryCore\obj\Debug
 C:\Users\Uilson\Documents\GitHub\MenuVirtualCore\LunaryCore\LunaryCore\obj\Debug\net6.0\LunaryCore.genruntimeconfig.cache
 C:\Users\Uilson\Documents\GitHub\MenuVirtualCore\LunaryCore\LunaryCore\obj\Debug\net6.0\ref\LunaryCore.dll
 C:\Users\android\Documents\GitHub\MenuVirtualCore\LunaryCore\LunaryCore\bin\Debug\net6.0\Acr.UserDialogs.dll
+C:\Users\gc126\OneDrive\Documentos\GitHub\MenuVirtualCore\LunaryCore\LunaryCore\bin\Debug\net6.0\Acr.UserDialogs.dll

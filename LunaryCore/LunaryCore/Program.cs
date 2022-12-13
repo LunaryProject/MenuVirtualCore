@@ -6,8 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<Contexto>(options => options.UseSqlServer
-//("Data Source=mssql2016.hostingzone.com.br;Initial Catalog=lunary;user id=lunary;password=lunary;Integrated Security=True;Encrypt=False"));
-("Data Source=.\\SENAI;Initial Catalog=BancoDeDados;Integrated Security=True;Encrypt=False"));
+("Data Source=mssql2016.hostingzone.com.br;Initial Catalog=lunary;user id=lunary;password=lunary;Integrated Security=True;Encrypt=False"));
+//("Data Source=.\\SENAI;Initial Catalog=BancoDeDados;Integrated Security=True;Encrypt=False"));
 //("Data Source=10.139.166.53\\SENAI;Initial Catalog=BancoDeDados;Integrated Security=True;Encrypt=False"));
 
 
